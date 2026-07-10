@@ -4,10 +4,12 @@ import { TopBar } from "./top-bar";
 import { Header } from "./header";
 import { Footer } from "./footer";
 import { FloatingActions } from "./floating-actions";
+import { ScrollProgress } from "./scroll-progress";
 
 export function PageShell({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex min-h-screen flex-col bg-background">
+      <ScrollProgress />
       <TopBar />
       <Header />
       {children}

@@ -4,6 +4,7 @@ import { CheckCircle2, MapPin, Users, Plane, Award } from "lucide-react";
 import { SITE } from "./data";
 import { SectionLabel, Ornament } from "./ornaments";
 import { Reveal } from "./reveal";
+import { Counter } from "./counter";
 
 const STATS = [
   { icon: Award, value: "30 Yrs", label: "Experience" },
@@ -127,7 +128,7 @@ export function About() {
                   >
                     <s.icon className="h-5 w-5 text-[var(--coral)] mx-auto mb-2" />
                     <div className="font-display text-3xl md:text-4xl font-semibold text-[var(--ocean-deep)]">
-                      {s.value}
+                      <Counter value={s.value} />
                     </div>
                     <div className="text-[11px] md:text-xs text-[var(--ink)]/60 mt-1 tracking-wide">
                       {s.label}

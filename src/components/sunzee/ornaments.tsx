@@ -89,11 +89,23 @@ export function WaveDivider({
   flip = false,
   className = "",
   color = "var(--background)",
+  variant = "single",
 }: {
   flip?: boolean;
   className?: string;
   color?: string;
+  variant?: "single" | "double" | "triple";
 }) {
+  // Multi-layered wave paths for a richer ocean feel
+  const paths: Record<string, string> = {
+    single: "M0,30 C150,60 350,0 600,30 C850,60 1050,0 1200,30 L1200,60 L0,60 Z",
+    double:
+      "M0,40 C200,10 400,55 600,30 C800,5 1000,55 1200,30 L1200,60 L0,60 Z M0,46 C200,30 400,60 600,42 C800,28 1000,58 1200,42 L1200,60 L0,60 Z",
+    triple:
+      "M0,30 C200,5 400,55 600,30 C800,5 1000,55 1200,30 L1200,60 L0,60 Z M0,40 C200,20 400,55 600,38 C800,22 1000,55 1200,38 L1200,60 L0,60 Z M0,48 C200,35 400,58 600,46 C800,35 1000,58 1200,46 L1200,60 L0,60 Z",
+  };
+  // For multi-layer variants we split into multiple paths with decreasing opacity
+  const layers = variant === "single" ? 1 : variant === "double" ? 2 : 3;
   return (
     <div
       className={`pointer-events-none w-full overflow-hidden leading-none ${className}`}
@@ -106,7 +118,14 @@ export function WaveDivider({
         className="w-full h-[40px] md:h-[60px]"
         fill={color}
       >
-        <path d="M0,30 C150,60 350,0 600,30 C850,60 1050,0 1200,30 L1200,60 L0,60 Z" />
+        {Array.from({ length: layers }).map((_, i) => (
+          <path
+            key={i}
+            d={paths[variant]}
+            opacity={i === 0 ? 1 : 1 - i * 0.25}
+            transform={i > 0 ? `translate(0, ${i * 4})` : undefined}
+          />
+        ))}
       </svg>
     </div>
   );

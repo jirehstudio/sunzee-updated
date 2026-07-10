@@ -106,7 +106,7 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Quick search/enquiry bar (THG-style tourism pattern) */}
+        {/* Quick search/enquiry bar (THG-style tourism pattern) — desktop */}
         <div className="absolute bottom-0 inset-x-0 z-10 hidden md:block">
           <div className="container mx-auto max-w-7xl px-6 pb-6">
             <div className="rounded-2xl bg-white/95 backdrop-blur-md shadow-2xl ring-1 ring-[var(--ocean)]/10 p-3 md:p-4">
@@ -157,6 +157,31 @@ export function Hero() {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Mobile quick-enquiry CTA — keeps the tourism search vibe on small screens */}
+        <div className="md:hidden absolute bottom-4 inset-x-4 z-10">
+          <a
+            href="#enquiry"
+            className="flex items-center justify-between gap-3 rounded-2xl bg-white/95 backdrop-blur-md shadow-2xl ring-1 ring-[var(--ocean)]/15 px-4 py-3 active:scale-[0.98] transition-transform"
+          >
+            <div className="flex items-center gap-3">
+              <span className="grid h-9 w-9 place-items-center rounded-xl bg-gradient-to-br from-[var(--coral)] to-[var(--coral-deep)] text-white shadow-md">
+                <Search className="h-4 w-4" />
+              </span>
+              <div className="leading-tight">
+                <div className="text-[10px] font-semibold tracking-[0.2em] uppercase text-[var(--ink)]/55">
+                  Plan your trip
+                </div>
+                <div className="text-sm font-semibold text-[var(--ink)]">
+                  Find your perfect journey
+                </div>
+              </div>
+            </div>
+            <span className="grid h-7 w-7 place-items-center rounded-full bg-[var(--ocean)]/10 text-[var(--ocean-deep)]">
+              →
+            </span>
+          </a>
         </div>
 
         {/* Slide controls */}
