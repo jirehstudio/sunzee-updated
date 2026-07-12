@@ -1,18 +1,19 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
-import { ChevronLeft, ChevronRight, MapPin, Calendar, Compass, Search } from "lucide-react";
-import { HERO_SLIDES, SITE, DESTINATIONS } from "./data";
-import { Ornament } from "./ornaments";
+import { ChevronLeft, ChevronRight, MapPin, ArrowDown } from "lucide-react";
+import { HERO_SLIDES, DESTINATIONS } from "./data";
 
-const SLIDE_DURATION = 6500;
+const SLIDE_DURATION = 6000;
 
+// Per-slide: just the place name + a tiny evocative caption.
+// The big headline stays the same — what changes is *where* you are.
 const SLIDE_CAPTIONS = [
-  { place: "Mauritius", title: "Where the", accent: "lagoon meets", tail: "the luxury" },
-  { place: "Egypt", title: "Walk among", accent: "pharaohs", tail: "& pyramids" },
-  { place: "Reunion", title: "Chase the", accent: "volcano's", tail: "edge" },
-  { place: "Madagascar", title: "Stand beneath", accent: "the baobab", tail: "giants" },
-  { place: "Kenya", title: "Witness the", accent: "great", tail: "migration" },
+  { place: "Mauritius", caption: "Lagoon days, island nights" },
+  { place: "Egypt", caption: "Walk with pharaohs" },
+  { place: "Reunion", caption: "Chase the volcano" },
+  { place: "Madagascar", caption: "Meet the baobabs" },
+  { place: "Kenya", caption: "The wild awaits" },
 ];
 
 export function Hero() {
@@ -33,12 +34,12 @@ export function Hero() {
 
   return (
     <section id="home" className="relative">
-      <div className="relative h-[calc(100vh-120px)] min-h-[560px] md:h-[calc(100vh-160px)] md:min-h-[640px] md:max-h-[860px] w-full overflow-hidden bg-[var(--ocean-deep)]">
-        {/* Slides with Ken Burns effect */}
+      <div className="relative h-screen min-h-[600px] max-h-[920px] w-full overflow-hidden bg-[var(--ocean-deep)]">
+        {/* Slides with Ken Burns effect — the photos ARE the hero */}
         {HERO_SLIDES.map((src, i) => (
           <div
             key={src}
-            className={`absolute inset-0 transition-opacity duration-[1500ms] ${
+            className={`absolute inset-0 transition-opacity duration-[1800ms] ease-out ${
               i === index ? "opacity-100" : "opacity-0 pointer-events-none"
             }`}
             aria-hidden={i !== index}
@@ -49,147 +50,85 @@ export function Hero() {
               className={`h-full w-full object-cover ${i === index ? "animate-ken-burns" : ""}`}
               loading={i === 0 ? "eager" : "lazy"}
             />
-            {/* Lighter, warmer gradient overlays (brighter tourism vibe) */}
-            <div className="absolute inset-0 bg-gradient-to-b from-[var(--ink)]/30 via-[var(--ink)]/10 to-[var(--ink)]/65" />
-            <div className="absolute inset-0 bg-gradient-to-r from-[var(--ink)]/55 via-[var(--ink)]/15 to-transparent" />
-            <div className="absolute inset-0 bg-gradient-to-t from-[var(--ocean-deep)]/45 to-transparent" />
+            {/* Very light overlay — just a soft bottom gradient so text is readable,
+                the rest of the image breathes (stlucia.org approach) */}
+            <div className="absolute inset-0 bg-gradient-to-b from-[var(--ink)]/25 via-transparent to-[var(--ink)]/70" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[var(--ink)]/30 via-transparent to-transparent" />
           </div>
         ))}
 
-        {/* Content */}
-        <div className="relative z-10 container mx-auto max-w-7xl px-6 h-full flex items-center pb-24 md:pb-28 pt-6">
-          <div className="max-w-3xl">
-            {/* Pill badge */}
-            <div className="inline-flex items-center gap-2.5 rounded-full border border-white/40 bg-white/15 backdrop-blur px-4 py-2 mb-4 md:mb-5">
-              <MapPin className="h-3.5 w-3.5 text-[var(--gold)]" />
-              <span className="text-[10px] md:text-xs font-semibold tracking-[0.3em] uppercase text-white">
-                {SITE.tagline}
+        {/* Top-left small label — just the region, no corporate tagline */}
+        <div className="absolute top-6 md:top-8 left-6 md:left-10 z-10">
+          <div className="inline-flex items-center gap-2 text-white/85 text-[10px] md:text-xs font-semibold tracking-[0.3em] uppercase">
+            <span className="h-1.5 w-1.5 rounded-full bg-[var(--coral)] animate-pulse" />
+            East Africa &amp; Indian Ocean
+          </div>
+        </div>
+
+        {/* Top-right slide counter — magazine-style */}
+        <div className="absolute top-6 md:top-8 right-6 md:right-10 z-10 hidden md:flex items-center gap-2 text-white/70 text-xs tracking-[0.2em] font-display">
+          <span className="text-white text-base font-semibold">
+            {String(index + 1).padStart(2, "0")}
+          </span>
+          <span className="h-px w-8 bg-white/40" />
+          <span>{String(count).padStart(2, "0")}</span>
+        </div>
+
+        {/* Main content — bottom-left, minimal, image-forward */}
+        <div className="absolute inset-x-0 bottom-0 z-10">
+          <div className="container mx-auto max-w-7xl px-6 md:px-10 pb-28 md:pb-32">
+            {/* Per-slide place name */}
+            <div
+              key={`place-${index}`}
+              className="inline-flex items-center gap-2 mb-4 md:mb-5 animate-[fadeInUp_700ms_ease-out]"
+            >
+              <MapPin className="h-4 w-4 text-[var(--gold)]" />
+              <span className="text-xs md:text-sm font-semibold tracking-[0.35em] uppercase text-[var(--gold)]">
+                {cap.place}
               </span>
             </div>
 
-            {/* Headline */}
-            <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[5.5rem] font-medium leading-[0.95] text-white drop-shadow-lg">
-              {cap.title}
-              <span className="block italic text-shimmer mt-0.5">
-                {cap.accent}
-              </span>
-              <span className="block text-[var(--gold)] mt-0.5">{cap.tail}</span>
+            {/* Unified headline — doesn't change per slide */}
+            <h1 className="font-display text-[3.25rem] sm:text-7xl md:text-8xl lg:text-[8.5rem] font-medium leading-[0.92] text-white drop-shadow-xl tracking-tight">
+              Find your
+              <span className="block italic text-shimmer">somewhere</span>
             </h1>
 
-            {/* Ornament divider */}
-            <Ornament className="my-4 md:my-5 justify-start" />
-
-            <p className="max-w-xl text-sm sm:text-base md:text-lg text-white/90 leading-relaxed font-light">
-              From the timeless pyramids of Egypt to the baobabs of Madagascar,
-              we craft bespoke journeys across East Africa and the Indian Ocean,
-              where every sunrise feels like the first.
+            {/* Per-slide evocative caption */}
+            <p
+              key={`caption-${index}`}
+              className="mt-4 md:mt-5 font-display italic text-white/90 text-lg md:text-2xl font-light animate-[fadeInUp_700ms_ease-out_150ms_both]"
+            >
+              {cap.caption}
             </p>
 
-            <div className="mt-6 md:mt-7 flex flex-wrap items-center gap-3">
+            {/* Two simple CTAs — exploration first, booking second */}
+            <div className="mt-7 md:mt-8 flex flex-wrap items-center gap-3">
               <a
                 href="#destinations"
-                className="group inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-[var(--coral)] to-[var(--coral-deep)] px-6 md:px-8 py-3 md:py-3.5 text-sm font-semibold text-white shadow-[0_10px_30px_-8px_rgba(231,111,81,0.6)] hover:shadow-[0_14px_40px_-8px_rgba(231,111,81,0.85)] hover:-translate-y-0.5 transition-all"
+                className="group inline-flex items-center gap-2.5 rounded-full bg-gradient-to-r from-[var(--coral)] to-[var(--coral-deep)] px-6 md:px-7 py-3 md:py-3.5 text-sm font-semibold text-white shadow-[0_12px_36px_-10px_rgba(231,111,81,0.7)] hover:shadow-[0_18px_46px_-10px_rgba(231,111,81,0.9)] hover:-translate-y-0.5 transition-all"
               >
-                <span>Begin the Journey</span>
+                <span>Explore destinations</span>
                 <span className="grid h-6 w-6 place-items-center rounded-full bg-white/20 group-hover:translate-x-1 transition-transform">
                   →
                 </span>
               </a>
               <a
-                href={`mailto:${SITE.bookingEmail}`}
-                className="inline-flex items-center gap-2 rounded-full border border-white/50 bg-white/15 backdrop-blur px-5 md:px-7 py-3 md:py-3.5 text-sm font-semibold text-white hover:bg-white/25 hover:border-[var(--gold)] transition-all"
+                href="#enquiry"
+                className="inline-flex items-center gap-2 rounded-full border border-white/45 bg-white/10 backdrop-blur px-5 md:px-6 py-3 md:py-3.5 text-sm font-semibold text-white hover:bg-white/20 hover:border-[var(--gold)] transition-all"
               >
-                <Calendar className="h-4 w-4" />
-                Book Now
+                Plan my trip
               </a>
             </div>
           </div>
         </div>
 
-        {/* Quick search/enquiry bar (THG-style tourism pattern) — desktop */}
-        <div className="absolute bottom-0 inset-x-0 z-10 hidden md:block">
-          <div className="container mx-auto max-w-7xl px-6 pb-6">
-            <div className="rounded-2xl bg-white/95 backdrop-blur-md shadow-2xl ring-1 ring-[var(--ocean)]/10 p-3 md:p-4">
-              <div className="grid grid-cols-12 gap-2 md:gap-3">
-                <QuickField
-                  className="col-span-4"
-                  icon={<MapPin className="h-4 w-4 text-[var(--coral)]" />}
-                  label="Destination"
-                >
-                  <select className="w-full bg-transparent text-sm font-medium text-[var(--ink)] focus:outline-none cursor-pointer">
-                    <option>Any destination</option>
-                    {DESTINATIONS.map((d) => (
-                      <option key={d.name}>{d.name}</option>
-                    ))}
-                  </select>
-                </QuickField>
-                <QuickField
-                  className="col-span-3"
-                  icon={<Compass className="h-4 w-4 text-[var(--coral)]" />}
-                  label="Experience"
-                >
-                  <select className="w-full bg-transparent text-sm font-medium text-[var(--ink)] focus:outline-none cursor-pointer">
-                    <option>Any experience</option>
-                    <option>Beach &amp; Island</option>
-                    <option>Safari &amp; Wildlife</option>
-                    <option>Cultural &amp; Heritage</option>
-                    <option>Honeymoon</option>
-                  </select>
-                </QuickField>
-                <QuickField
-                  className="col-span-3"
-                  icon={<Calendar className="h-4 w-4 text-[var(--coral)]" />}
-                  label="Travel dates"
-                >
-                  <input
-                    type="text"
-                    placeholder="When?"
-                    className="w-full bg-transparent text-sm font-medium text-[var(--ink)] placeholder:text-[var(--ink)]/50 focus:outline-none"
-                  />
-                </QuickField>
-                <a
-                  href="#enquiry"
-                  className="col-span-2 inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[var(--ocean)] to-[var(--ocean-deep)] px-4 py-3 text-sm font-semibold text-white shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all"
-                >
-                  <Search className="h-4 w-4" />
-                  Search
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Mobile quick-enquiry CTA — keeps the tourism search vibe on small screens */}
-        <div className="md:hidden absolute bottom-4 inset-x-4 z-10">
-          <a
-            href="#enquiry"
-            className="flex items-center justify-between gap-3 rounded-2xl bg-white/95 backdrop-blur-md shadow-2xl ring-1 ring-[var(--ocean)]/15 px-4 py-3 active:scale-[0.98] transition-transform"
-          >
-            <div className="flex items-center gap-3">
-              <span className="grid h-9 w-9 place-items-center rounded-xl bg-gradient-to-br from-[var(--coral)] to-[var(--coral-deep)] text-white shadow-md">
-                <Search className="h-4 w-4" />
-              </span>
-              <div className="leading-tight">
-                <div className="text-[10px] font-semibold tracking-[0.2em] uppercase text-[var(--ink)]/55">
-                  Plan your trip
-                </div>
-                <div className="text-sm font-semibold text-[var(--ink)]">
-                  Find your perfect journey
-                </div>
-              </div>
-            </div>
-            <span className="grid h-7 w-7 place-items-center rounded-full bg-[var(--ocean)]/10 text-[var(--ocean-deep)]">
-              →
-            </span>
-          </a>
-        </div>
-
-        {/* Slide controls */}
+        {/* Slide controls — minimal, only on desktop */}
         <button
           type="button"
           onClick={() => go(-1)}
           aria-label="Previous slide"
-          className="hidden md:grid absolute left-6 top-1/2 -translate-y-1/2 z-20 h-12 w-12 place-items-center rounded-full border border-white/40 bg-white/15 backdrop-blur text-white hover:bg-[var(--coral)] hover:text-white hover:border-[var(--coral)] transition-all"
+          className="hidden md:grid absolute left-4 top-1/2 -translate-y-1/2 z-20 h-11 w-11 place-items-center rounded-full border border-white/30 bg-white/10 backdrop-blur text-white/80 hover:bg-[var(--coral)] hover:text-white hover:border-[var(--coral)] transition-all"
         >
           <ChevronLeft className="h-5 w-5" />
         </button>
@@ -197,13 +136,13 @@ export function Hero() {
           type="button"
           onClick={() => go(1)}
           aria-label="Next slide"
-          className="hidden md:grid absolute right-6 top-1/2 -translate-y-1/2 z-20 h-12 w-12 place-items-center rounded-full border border-white/40 bg-white/15 backdrop-blur text-white hover:bg-[var(--coral)] hover:text-white hover:border-[var(--coral)] transition-all"
+          className="hidden md:grid absolute right-4 top-1/2 -translate-y-1/2 z-20 h-11 w-11 place-items-center rounded-full border border-white/30 bg-white/10 backdrop-blur text-white/80 hover:bg-[var(--coral)] hover:text-white hover:border-[var(--coral)] transition-all"
         >
           <ChevronRight className="h-5 w-5" />
         </button>
 
-        {/* Dots */}
-        <div className="absolute bottom-6 md:bottom-[140px] left-1/2 -translate-x-1/2 z-20 flex items-center gap-2">
+        {/* Dots — minimal, bottom-left next to content */}
+        <div className="absolute bottom-10 md:bottom-12 right-6 md:right-10 z-20 flex items-center gap-2">
           {HERO_SLIDES.map((_, i) => (
             <button
               key={i}
@@ -212,61 +151,46 @@ export function Hero() {
               aria-label={`Go to slide ${i + 1}`}
               className={`transition-all rounded-full ${
                 i === index
-                  ? "w-10 h-1.5 bg-[var(--gold)]"
-                  : "w-1.5 h-1.5 bg-white/50 hover:bg-white/80"
+                  ? "w-8 h-1.5 bg-[var(--gold)]"
+                  : "w-1.5 h-1.5 bg-white/45 hover:bg-white/80"
               }`}
             />
           ))}
         </div>
+
+        {/* Scroll-to-explore hint — invites roaming, not searching */}
+        <a
+          href="#destinations"
+          className="hidden md:flex absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex-col items-center gap-1 text-white/55 hover:text-white transition-colors group"
+          aria-label="Scroll to explore"
+        >
+          <span className="text-[10px] tracking-[0.3em] uppercase font-semibold">Scroll</span>
+          <ArrowDown className="h-3.5 w-3.5 animate-bounce group-hover:text-[var(--gold)]" />
+        </a>
       </div>
 
-      {/* Marquee strip — bright accent strip */}
-      <div className="bg-gradient-to-r from-[var(--ocean)] to-[var(--ocean-deep)] text-white py-3.5 overflow-hidden border-b border-[var(--gold)]/25">
-        <div className="flex w-max items-center gap-12 whitespace-nowrap animate-[marquee_40s_linear_infinite]">
-          {Array.from({ length: 3 }).map((_, k) => (
-            <div key={k} className="flex items-center gap-12 text-sm tracking-[0.2em] uppercase font-display">
-              <span>Egypt</span>
-              <span className="h-1.5 w-1.5 rounded-full bg-[var(--gold)] shrink-0" />
-              <span>Kenya</span>
-              <span className="h-1.5 w-1.5 rounded-full bg-[var(--gold)] shrink-0" />
-              <span>Zanzibar</span>
-              <span className="h-1.5 w-1.5 rounded-full bg-[var(--gold)] shrink-0" />
-              <span>Mauritius</span>
-              <span className="h-1.5 w-1.5 rounded-full bg-[var(--gold)] shrink-0" />
-              <span>Madagascar</span>
-              <span className="h-1.5 w-1.5 rounded-full bg-[var(--gold)] shrink-0" />
-              <span>Reunion</span>
-              <span className="h-1.5 w-1.5 rounded-full bg-[var(--gold)] shrink-0" />
-            </div>
-          ))}
+      {/* Destination chips strip — "where to next?" roaming vibe, replaces corporate search bar */}
+      <div className="bg-[var(--ocean-deep)] text-white border-t border-white/10">
+        <div className="container mx-auto max-w-7xl px-6 md:px-10 py-4 md:py-5">
+          <div className="flex items-center gap-3 md:gap-5 overflow-x-auto scrollbar-none -mx-1 px-1">
+            <span className="text-[10px] md:text-xs font-semibold tracking-[0.3em] uppercase text-[var(--gold)] shrink-0 mr-1">
+              Where to?
+            </span>
+            {DESTINATIONS.map((d, i) => (
+              <a
+                key={d.name}
+                href={d.href}
+                className="group inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 backdrop-blur px-4 md:px-5 py-2 text-sm font-medium text-white/90 hover:bg-[var(--coral)] hover:border-[var(--coral)] hover:text-white transition-all shrink-0"
+              >
+                <span className="font-display italic text-[var(--gold)] group-hover:text-white/80">
+                  0{i + 1}
+                </span>
+                {d.name}
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </section>
-  );
-}
-
-function QuickField({
-  className = "",
-  icon,
-  label,
-  children,
-}: {
-  className?: string;
-  icon: React.ReactNode;
-  label: string;
-  children: React.ReactNode;
-}) {
-  return (
-    <div className={`flex items-center gap-2.5 rounded-xl bg-[var(--sand)]/70 px-3.5 py-2.5 ${className}`}>
-      <span className="grid h-8 w-8 place-items-center rounded-lg bg-white shadow-sm shrink-0">
-        {icon}
-      </span>
-      <div className="flex-1 min-w-0">
-        <div className="text-[9px] font-semibold tracking-[0.2em] uppercase text-[var(--ink)]/55 mb-0.5">
-          {label}
-        </div>
-        {children}
-      </div>
-    </div>
   );
 }
