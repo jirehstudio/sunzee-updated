@@ -48,7 +48,7 @@ export function WhyChooseUs() {
                   <div className="absolute -top-12 -right-12 h-24 w-24 rounded-full bg-[var(--coral)]/10 group-hover:bg-[var(--coral)]/20 transition-colors" />
 
                   <div className="relative">
-                    <div className="grid h-14 w-14 place-items-center rounded-2xl bg-gradient-to-br from-[var(--ocean)] to-[var(--ocean-deep)] text-white shadow-lg mb-5 group-hover:scale-110 transition-transform">
+                    <div className="grid h-14 w-14 place-items-center rounded-2xl bg-gradient-to-br from-[var(--ocean-deep)] to-[var(--ocean-ink)] text-white shadow-lg mb-5 group-hover:scale-110 transition-transform">
                       <Icon className="h-7 w-7" />
                     </div>
                     <div className="text-[10px] font-semibold tracking-[0.25em] uppercase text-[var(--coral-deep)] mb-2">

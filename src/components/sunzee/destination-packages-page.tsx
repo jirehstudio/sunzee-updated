@@ -48,7 +48,7 @@ export function DestinationPackagesPage({ data }: { data: DestinationPackages })
   return (
     <main className="flex-1">
       {/* HERO BANNER — brighter, with multi-image collage strip */}
-      <section className="relative h-[50vh] min-h-[360px] max-h-[520px] overflow-hidden bg-[var(--ocean-deep)]">
+      <section className="relative h-[50vh] min-h-[360px] max-h-[520px] overflow-hidden bg-[var(--ocean-ink)]">
         <img
           src={data.heroImage}
           alt={data.title}
@@ -100,7 +100,7 @@ export function DestinationPackagesPage({ data }: { data: DestinationPackages })
       )}
 
       {/* BREADCRUMB */}
-      <div className="bg-[var(--ocean-deep)] text-white border-b border-[var(--gold)]/20">
+      <div className="bg-[var(--ocean-ink)] text-white border-b border-[var(--gold)]/20">
         <div className="container mx-auto max-w-7xl px-6 py-3 flex items-center justify-between text-xs">
           <nav className="flex items-center gap-1.5 text-white/75">
             <a href="/" className="hover:text-[var(--gold)] flex items-center gap-1.5 transition-colors">
@@ -238,7 +238,7 @@ export function DestinationPackagesPage({ data }: { data: DestinationPackages })
               )}
 
               {/* CTA strip — bright */}
-              <div className="mt-10 rounded-3xl bg-gradient-to-r from-[var(--ocean)] to-[var(--ocean-deep)] text-white p-7 md:p-8 flex flex-col md:flex-row items-center justify-between gap-5 relative overflow-hidden">
+              <div className="mt-10 rounded-3xl bg-gradient-to-r from-[var(--ocean-deep)] to-[var(--ocean-ink)] text-white p-7 md:p-8 flex flex-col md:flex-row items-center justify-between gap-5 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-[0.06]" style={{ backgroundImage: "radial-gradient(circle at 1px 1px, #ffffff 1px, transparent 0)", backgroundSize: "20px 20px" }} />
                 <div className="relative flex-1">
                   <SectionLabel>
@@ -367,7 +367,7 @@ export function DestinationPackagesPage({ data }: { data: DestinationPackages })
                 </button>
 
                 {/* Quick contact — bright */}
-                <div className="rounded-3xl bg-gradient-to-br from-[var(--ocean)] to-[var(--ocean-deep)] text-white p-5 relative overflow-hidden">
+                <div className="rounded-3xl bg-gradient-to-br from-[var(--ocean-deep)] to-[var(--ocean-ink)] text-white p-5 relative overflow-hidden">
                   <div className="absolute inset-0 opacity-[0.06]" style={{ backgroundImage: "radial-gradient(circle at 1px 1px, #ffffff 1px, transparent 0)", backgroundSize: "20px 20px" }} />
                   <div className="relative">
                     <div className="flex items-center gap-2 mb-3">
@@ -394,7 +394,7 @@ export function DestinationPackagesPage({ data }: { data: DestinationPackages })
       </section>
 
       {/* Enquiry anchor */}
-      <section id="enquiry" className="py-20 md:py-24 bg-gradient-to-br from-[var(--ocean)] to-[var(--ocean-deep)] text-white relative overflow-hidden">
+      <section id="enquiry" className="py-20 md:py-24 bg-gradient-to-br from-[var(--ocean-deep)] to-[var(--ocean-ink)] text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-[0.05]" style={{ backgroundImage: "radial-gradient(circle at 1px 1px, #ffffff 1px, transparent 0)", backgroundSize: "24px 24px" }} />
         <div className="container mx-auto max-w-4xl px-6 relative text-center">
           <SectionLabel>

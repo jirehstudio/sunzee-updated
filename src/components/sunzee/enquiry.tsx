@@ -42,7 +42,7 @@ export function Enquiry() {
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-10 items-stretch">
           {/* Left: info panel — bright ocean teal with image */}
           <Reveal className="lg:col-span-2" y={50}>
-            <div className="relative h-full rounded-3xl overflow-hidden bg-gradient-to-br from-[var(--ocean)] to-[var(--ocean-deep)] text-white p-8 md:p-10 flex flex-col">
+            <div className="relative h-full rounded-3xl overflow-hidden bg-gradient-to-br from-[var(--ocean-deep)] to-[var(--ocean-ink)] text-white p-8 md:p-10 flex flex-col">
               {/* Background image overlay */}
               <div className="absolute inset-0 opacity-20">
                 <img

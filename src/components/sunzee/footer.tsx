@@ -15,7 +15,7 @@ import { SITE, TOUR_PACKAGES, IMPORTANT_LINKS } from "./data";
 
 export function Footer() {
   return (
-    <footer id="contact" className="bg-[var(--ocean-deep)] text-white relative overflow-hidden">
+    <footer id="contact" className="bg-[var(--ocean-ink)] text-white relative overflow-hidden">
       {/* Decorative pattern */}
       <div
         className="absolute inset-0 opacity-[0.04] pointer-events-none"

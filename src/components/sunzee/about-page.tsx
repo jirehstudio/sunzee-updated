@@ -27,7 +27,7 @@ export function AboutPage() {
   return (
     <main className="flex-1">
       {/* HERO BANNER — bright */}
-      <section className="relative h-[50vh] min-h-[380px] max-h-[520px] overflow-hidden bg-[var(--ocean-deep)]">
+      <section className="relative h-[50vh] min-h-[380px] max-h-[520px] overflow-hidden bg-[var(--ocean-ink)]">
         <img
           src="https://sfile.chatglm.cn/images-ppt/aefc9acf92b7.png"
           alt="About Sunzee Holidays"
@@ -55,7 +55,7 @@ export function AboutPage() {
       </section>
 
       {/* BREADCRUMB */}
-      <div className="bg-[var(--ocean-deep)] text-white border-b border-[var(--gold)]/20">
+      <div className="bg-[var(--ocean-ink)] text-white border-b border-[var(--gold)]/20">
         <div className="container mx-auto max-w-7xl px-6 py-3 flex items-center text-xs">
           <nav className="flex items-center gap-1.5 text-white/75">
             <a href="/" className="hover:text-[var(--gold)] transition-colors">Home</a>
@@ -170,7 +170,7 @@ export function AboutPage() {
                 {/* Avatar */}
                 <div className="flex items-start gap-5 mb-6">
                   <div className="relative shrink-0">
-                    <div className="grid h-20 w-20 place-items-center rounded-full bg-gradient-to-br from-[var(--ocean)] to-[var(--ocean-deep)] text-white font-display text-3xl font-semibold shadow-lg">
+                    <div className="grid h-20 w-20 place-items-center rounded-full bg-gradient-to-br from-[var(--ocean-deep)] to-[var(--ocean-ink)] text-white font-display text-3xl font-semibold shadow-lg">
                       IA
                     </div>
                     <div className="absolute -inset-1.5 rounded-full border border-[var(--coral)]/40 -z-10" />
@@ -301,7 +301,7 @@ export function AboutPage() {
             <Reveal>
               <div className="rounded-3xl border border-[var(--ocean)]/15 bg-white p-8 md:p-10 h-full shadow-sm">
                 <div className="flex items-center gap-3 mb-5">
-                  <div className="grid h-12 w-12 place-items-center rounded-xl bg-gradient-to-br from-[var(--ocean)] to-[var(--ocean-deep)] text-white shadow-md">
+                  <div className="grid h-12 w-12 place-items-center rounded-xl bg-gradient-to-br from-[var(--ocean-deep)] to-[var(--ocean-ink)] text-white shadow-md">
                     <Plane className="h-5 w-5" />
                   </div>
                   <h3 className="font-display text-3xl font-semibold text-[var(--ink)]">
@@ -386,7 +386,7 @@ export function AboutPage() {
               <div className="relative rounded-3xl border border-[var(--ocean)]/15 bg-white p-8 md:p-10 h-full shadow-md hover:shadow-xl card-lift">
                 <div className="absolute top-0 left-0 w-12 h-12 border-t-2 border-l-2 border-[var(--ocean)]/50 rounded-tl-3xl" />
                 <div className="flex items-center gap-3 mb-5">
-                  <div className="grid h-14 w-14 place-items-center rounded-2xl bg-gradient-to-br from-[var(--ocean)] to-[var(--ocean-deep)] text-white shadow-md">
+                  <div className="grid h-14 w-14 place-items-center rounded-2xl bg-gradient-to-br from-[var(--ocean-deep)] to-[var(--ocean-ink)] text-white shadow-md">
                     <Target className="h-6 w-6" />
                   </div>
                   <h3 className="font-display text-3xl font-semibold text-[var(--ink)]">
@@ -436,7 +436,7 @@ export function AboutPage() {
       </section>
 
       {/* CTA — bright */}
-      <section className="py-20 md:py-24 bg-gradient-to-br from-[var(--ocean)] to-[var(--ocean-deep)] text-white relative overflow-hidden">
+      <section className="py-20 md:py-24 bg-gradient-to-br from-[var(--ocean-deep)] to-[var(--ocean-ink)] text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-[0.05]" style={{ backgroundImage: "radial-gradient(circle at 1px 1px, #ffffff 1px, transparent 0)", backgroundSize: "24px 24px" }} />
         <div className="container mx-auto max-w-4xl px-6 relative text-center">
           <SectionLabel>

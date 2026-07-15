@@ -5,7 +5,7 @@ import { SITE } from "./data";
 
 export function TopBar() {
   return (
-    <div className="bg-[var(--ocean-deep)] text-white relative">
+    <div className="bg-[var(--ocean-ink)] text-white relative">
       {/* subtle texture */}
       <div
         className="absolute inset-0 opacity-[0.06] pointer-events-none"

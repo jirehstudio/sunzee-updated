@@ -34,7 +34,7 @@ export function Hero() {
 
   return (
     <section id="home" className="relative">
-      <div className="relative h-screen min-h-[600px] max-h-[920px] w-full overflow-hidden bg-[var(--ocean-deep)]">
+      <div className="relative h-screen min-h-[600px] max-h-[920px] w-full overflow-hidden bg-[var(--ocean-ink)]">
         {/* Slides with Ken Burns effect — the photos ARE the hero */}
         {HERO_SLIDES.map((src, i) => (
           <div
@@ -170,7 +170,7 @@ export function Hero() {
       </div>
 
       {/* Destination chips strip — "where to next?" roaming vibe, replaces corporate search bar */}
-      <div className="bg-[var(--ocean-deep)] text-white border-t border-white/10">
+      <div className="bg-[var(--ocean-ink)] text-white border-t border-white/10">
         <div className="container mx-auto max-w-7xl px-6 md:px-10 py-4 md:py-5">
           <div className="flex items-center gap-3 md:gap-5 overflow-x-auto scrollbar-none -mx-1 px-1">
             <span className="text-[10px] md:text-xs font-semibold tracking-[0.3em] uppercase text-[var(--gold)] shrink-0 mr-1">
