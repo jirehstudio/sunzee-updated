@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 import { ChevronLeft, ChevronRight, MapPin, ArrowDown } from "lucide-react";
-import { HERO_SLIDES, DESTINATIONS } from "./data";
+import { HERO_SLIDES } from "./data";
 
 const SLIDE_DURATION = 6000;
 
@@ -167,29 +167,6 @@ export function Hero() {
           <span className="text-[10px] tracking-[0.3em] uppercase font-semibold">Scroll</span>
           <ArrowDown className="h-3.5 w-3.5 animate-bounce group-hover:text-[var(--gold)]" />
         </a>
-      </div>
-
-      {/* Destination chips strip — "where to next?" roaming vibe, replaces corporate search bar */}
-      <div className="bg-[var(--ocean-ink)] text-white border-t border-white/10">
-        <div className="container mx-auto max-w-7xl px-6 md:px-10 py-4 md:py-5">
-          <div className="flex items-center gap-3 md:gap-5 overflow-x-auto scrollbar-none -mx-1 px-1">
-            <span className="text-[10px] md:text-xs font-semibold tracking-[0.3em] uppercase text-[var(--gold)] shrink-0 mr-1">
-              Where to?
-            </span>
-            {DESTINATIONS.map((d, i) => (
-              <a
-                key={d.name}
-                href={d.href}
-                className="group inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 backdrop-blur px-4 md:px-5 py-2 text-sm font-medium text-white/90 hover:bg-[var(--coral)] hover:border-[var(--coral)] hover:text-white transition-all shrink-0"
-              >
-                <span className="font-display italic text-[var(--gold)] group-hover:text-white/80">
-                  0{i + 1}
-                </span>
-                {d.name}
-              </a>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );
