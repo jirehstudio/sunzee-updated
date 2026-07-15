@@ -89,7 +89,7 @@ export function Hero() {
             </div>
 
             {/* Unified headline — doesn't change per slide */}
-            <h1 className="font-display text-[3.25rem] sm:text-7xl md:text-8xl lg:text-[8.5rem] font-medium leading-[0.92] text-white drop-shadow-xl tracking-tight">
+            <h1 className="font-display text-[2.75rem] sm:text-6xl md:text-7xl lg:text-[8rem] font-medium leading-[0.92] text-white drop-shadow-xl tracking-tight">
               Find your
               <span className="block italic text-shimmer">somewhere</span>
             </h1>

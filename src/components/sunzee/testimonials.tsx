@@ -11,7 +11,7 @@ export function Testimonials() {
       <div className="container mx-auto max-w-7xl px-6 relative">
         <Reveal className="text-center max-w-3xl mx-auto mb-14">
           <SectionLabel>Traveller stories</SectionLabel>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-medium text-[var(--ink)] mt-5 leading-[1.05]">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-[var(--ink)] mt-5 leading-[1.05]">
             Loved by <span className="italic text-gradient-ocean">travellers &amp; agents</span>
           </h2>
           <Ornament className="mt-6" />

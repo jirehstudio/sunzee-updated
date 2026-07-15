@@ -81,7 +81,7 @@ export function About() {
               </SectionLabel>
             </Reveal>
             <Reveal delay={0.1}>
-              <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-medium text-[var(--ink)] leading-[1.05] mt-5">
+              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-[var(--ink)] leading-[1.05] mt-5">
                 The Best Destination
                 <span className="block italic text-gradient-ocean">Management Company</span>
                 <span className="block">in East Africa</span>

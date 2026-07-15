@@ -11,7 +11,7 @@ export function Moments() {
       <div className="container mx-auto max-w-7xl px-6 relative">
         <Reveal className="text-center max-w-3xl mx-auto mb-14">
           <SectionLabel>Travel moments</SectionLabel>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-medium text-[var(--ink)] mt-5 leading-[1.05]">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-[var(--ink)] mt-5 leading-[1.05]">
             Postcards from <span className="italic text-gradient-ocean">our travellers</span>
           </h2>
           <Ornament className="mt-6" />
@@ -61,7 +61,7 @@ export function Moments() {
             href={SITE_INSTAGRAM}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full border border-[var(--ocean)]/30 px-6 py-3 text-sm font-semibold text-[var(--ocean-deep)] hover:bg-[var(--ocean)] hover:text-white transition-all"
+            className="inline-flex items-center gap-2 rounded-full border border-[var(--ocean)]/30 px-6 py-3 text-sm font-semibold text-[var(--ocean-deep)] hover:bg-[var(--ocean-ink)] hover:text-white transition-all"
           >
             <Camera className="h-4 w-4" />
             Follow our journey on Instagram

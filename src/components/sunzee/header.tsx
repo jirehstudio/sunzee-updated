@@ -129,7 +129,7 @@ export function Header() {
             <div className="flex items-center gap-2">
               <a
                 href={`tel:${SITE.phoneRaw}`}
-                className="hidden md:inline-flex items-center gap-2 rounded-full border border-[var(--ocean)]/30 px-4 py-1.5 text-sm font-medium text-[var(--ocean-deep)] hover:bg-[var(--ocean)] hover:text-white transition-colors"
+                className="hidden md:inline-flex items-center gap-2 rounded-full border border-[var(--ocean)]/30 px-4 py-1.5 text-sm font-medium text-[var(--ocean-deep)] hover:bg-[var(--ocean-ink)] hover:text-white transition-colors"
               >
                 <Phone className="h-4 w-4" />
                 <span className="hidden xl:inline">Call Us</span>

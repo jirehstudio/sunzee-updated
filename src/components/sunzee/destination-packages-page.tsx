@@ -65,7 +65,7 @@ export function DestinationPackagesPage({ data }: { data: DestinationPackages })
               East Africa &amp; Indian Ocean
             </span>
           </div>
-          <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-medium text-white leading-[1.05] drop-shadow-lg">
+          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium text-white leading-[1.05] drop-shadow-lg">
             {data.title}
           </h1>
           <Ornament className="my-5" />
@@ -400,7 +400,7 @@ export function DestinationPackagesPage({ data }: { data: DestinationPackages })
           <SectionLabel>
             <span className="text-[var(--gold)]">Plan your {data.name} journey</span>
           </SectionLabel>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-medium mt-5 leading-[1.05]">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium mt-5 leading-[1.05]">
             Begin your
             <span className="block italic text-[var(--gold)]">extraordinary story</span>
           </h2>

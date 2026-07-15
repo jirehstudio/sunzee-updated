@@ -31,9 +31,9 @@ export function CTA() {
           </span>
         </div>
 
-        <h2 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium uppercase leading-[1.0] text-white tracking-tight drop-shadow-lg">
+        <h2 className="font-display text-xl sm:text-4xl md:text-5xl lg:text-7xl font-medium uppercase leading-[1.15] text-white tracking-tight drop-shadow-lg">
           Relax And Enjoy Your
-          <br className="hidden sm:block" />
+          <br />
           <span className="italic text-shimmer">Holiday With Sunzee Holidays</span>
         </h2>
 

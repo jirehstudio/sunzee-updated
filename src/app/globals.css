@@ -64,17 +64,17 @@
      - Gold as the warm secondary (sunshine, luxury accent)
      ============================================================ */
 
-  /* Brand */
-  --ocean:        oklch(0.68 0.12 245);   /* lighter ocean blue */
-  --ocean-deep:   oklch(0.55 0.14 245);   /* medium blue for hover/text */
-  --ocean-ink:    oklch(0.32 0.10 245);   /* deep navy blue for dark backgrounds (top bar, footer) */
-  --coral:        oklch(0.88 0.11 85);    /* LIGHT GOLD (replaces coral) */
-  --coral-deep:   oklch(0.78 0.13 80);    /* warmer gold (replaces coral-deep) */
-  --sand:         oklch(0.97 0.015 75);   /* warm ivory tint */
-  --sand-deep:    oklch(0.93 0.020 75);   /* deeper ivory */
-  --sky:          oklch(0.95 0.025 240);  /* soft blue tint */
-  --ink:          oklch(0.22 0.03 245);   /* deep navy ink */
-  --gold:         oklch(0.88 0.11 85);    /* light gold */
+  /* Brand — inspired by reference: soft sky/ocean blue + warm peachy gold */
+  --ocean:        oklch(0.78 0.10 230);   /* soft sky/ocean blue (ref: #80c0e0) */
+  --ocean-deep:   oklch(0.66 0.11 235);   /* medium blue for hover/text */
+  --ocean-ink:    oklch(0.36 0.09 240);   /* deep navy blue for dark backgrounds (top bar, footer) */
+  --coral:        oklch(0.85 0.09 75);    /* warm peachy gold (ref: #f5b684) */
+  --coral-deep:   oklch(0.76 0.11 70);    /* deeper peach gold */
+  --sand:         oklch(0.97 0.012 75);   /* warm ivory tint */
+  --sand-deep:    oklch(0.94 0.016 75);   /* deeper ivory */
+  --sky:          oklch(0.96 0.020 230);  /* soft sky tint */
+  --ink:          oklch(0.22 0.02 240);   /* deep navy ink */
+  --gold:         oklch(0.85 0.09 75);    /* warm peachy gold */
 
   /* Surface */
   --background:   oklch(0.99 0.005 75);   /* near-white ivory */
@@ -144,6 +144,15 @@
     font-family: var(--font-cormorant), Georgia, serif;
     font-weight: 600;
     letter-spacing: -0.01em;
+  }
+  /* Fix italic heading text getting clipped on the right (italic slant overhang).
+     Italic Cormorant overhangs its box by ~10-15px on large headings.
+     Add right padding to italic spans/em inside headings so the last letter has room. */
+  h1 .italic, h2 .italic, h3 .italic, h4 .italic, h5 .italic, h6 .italic {
+    padding-right: 0.18em;
+  }
+  h1 em, h2 em, h3 em, h4 em, h5 em, h6 em {
+    padding-right: 0.18em;
   }
 }
 
