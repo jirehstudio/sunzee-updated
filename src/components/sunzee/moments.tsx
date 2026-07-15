@@ -61,7 +61,7 @@ export function Moments() {
             href={SITE_INSTAGRAM}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full border border-[var(--ocean)]/30 px-6 py-3 text-sm font-semibold text-[var(--ocean-deep)] hover:bg-[var(--ocean-ink)] hover:text-white transition-all"
+            className="inline-flex items-center gap-2 rounded-full border border-[var(--ocean)]/30 px-6 py-3 text-sm font-semibold text-[var(--ocean-deep)] hover:bg-[var(--ocean)] hover:text-white transition-all"
           >
             <Camera className="h-4 w-4" />
             Follow our journey on Instagram

@@ -126,7 +126,7 @@ export function Destinations() {
                           />
                         </div>
                       ))}
-                      <div className="ml-0.5 inline-flex items-center gap-1 rounded-full bg-[var(--ocean)]/10 px-2.5 py-1.5 text-[9px] font-semibold tracking-[0.2em] uppercase text-[var(--ocean-deep)] group-hover:bg-[var(--ocean-ink)] group-hover:text-white transition-colors shrink-0 self-center">
+                      <div className="ml-0.5 inline-flex items-center gap-1 rounded-full bg-[var(--ocean)]/10 px-2.5 py-1.5 text-[9px] font-semibold tracking-[0.2em] uppercase text-[var(--ocean-deep)] group-hover:bg-[var(--ocean)] group-hover:text-white transition-colors shrink-0 self-center">
                         View
                         <ArrowUpRight className="h-2.5 w-2.5" />
                       </div>
