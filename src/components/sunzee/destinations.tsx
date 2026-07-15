@@ -9,7 +9,7 @@ export function Destinations() {
   return (
     <section
       id="destinations"
-      className="py-20 md:py-28 bg-paper relative overflow-hidden"
+      className="pt-12 pb-20 md:pt-16 md:pb-28 bg-paper relative overflow-hidden"
     >
       {/* Decorative compass watermark */}
       <div className="absolute -top-20 -right-20 opacity-[0.05] pointer-events-none text-[var(--ocean)]">

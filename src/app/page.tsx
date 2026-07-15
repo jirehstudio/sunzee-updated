@@ -24,8 +24,6 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
 
-        {/* Wave from hero (image) into destinations (cream paper) */}
-        <WaveDivider color="var(--background)" variant="triple" className="-mt-px relative z-10 text-[var(--background)]" />
         <Destinations />
 
         {/* Subtle wave into Experiences (sand-tint) */}
