@@ -43,7 +43,7 @@ export function Testimonials() {
 
                   {/* Author */}
                   <div className="flex items-center gap-3 pt-5 border-t border-[var(--ocean)]/12">
-                    <div className="grid h-12 w-12 place-items-center rounded-full bg-gradient-to-br from-[var(--coral)] to-[var(--coral-deep)] text-white font-display text-base font-semibold shrink-0">
+                    <div className="grid h-12 w-12 place-items-center rounded-full bg-gradient-to-br from-[var(--coral)] to-[var(--coral-deep)] text-[var(--ink)] font-display text-base font-semibold shrink-0">
                       {t.avatar}
                     </div>
                     <div>

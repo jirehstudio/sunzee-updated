@@ -46,7 +46,7 @@ export function CTA() {
         <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
           <a
             href={`mailto:${SITE.bookingEmail}`}
-            className="group inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-[var(--coral)] to-[var(--coral-deep)] px-9 py-4 text-sm font-semibold text-white shadow-[0_12px_40px_-10px_rgba(231,111,81,0.85)] hover:shadow-[0_18px_50px_-10px_rgba(231,111,81,1)] hover:-translate-y-1 transition-all"
+            className="group inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-[var(--coral)] to-[var(--coral-deep)] px-9 py-4 text-sm font-semibold text-[var(--ink)] shadow-[0_12px_40px_-10px_rgba(180,140,40,0.85)] hover:shadow-[0_18px_50px_-10px_rgba(180,140,40,1)] hover:-translate-y-1 transition-all"
           >
             <Mail className="h-4 w-4" />
             <span className="tracking-wide">BOOK NOW</span>

@@ -62,7 +62,7 @@ export function About() {
               </div>
 
               {/* Floating badge */}
-              <div className="absolute -top-6 -left-3 md:-left-10 rounded-2xl bg-gradient-to-br from-[var(--coral)] to-[var(--coral-deep)] text-white px-5 py-3.5 shadow-2xl rotate-[-4deg] hover:rotate-0 transition-transform duration-500">
+              <div className="absolute -top-6 -left-3 md:-left-10 rounded-2xl bg-gradient-to-br from-[var(--coral)] to-[var(--coral-deep)] text-[var(--ink)] px-5 py-3.5 shadow-2xl rotate-[-4deg] hover:rotate-0 transition-transform duration-500">
                 <div className="flex items-center gap-2 mb-1">
                   <Award className="h-4 w-4" />
                   <span className="text-[10px] tracking-[0.3em] uppercase font-semibold">Specialists in</span>

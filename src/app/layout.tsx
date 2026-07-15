@@ -31,6 +31,9 @@ export const metadata: Metadata = {
     "Reunion holidays",
   ],
   authors: [{ name: "Sunzee Holidays" }],
+  icons: {
+    icon: "/sunzee/logo.png",
+  },
 };
 
 export default function RootLayout({

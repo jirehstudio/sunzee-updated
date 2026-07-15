@@ -92,7 +92,7 @@ export function Enquiry() {
 
               {submitted ? (
                 <div className="h-full flex flex-col items-center justify-center text-center py-12">
-                  <div className="grid h-20 w-20 place-items-center rounded-full bg-gradient-to-br from-[var(--coral)] to-[var(--coral-deep)] text-white mb-6 shadow-lg">
+                  <div className="grid h-20 w-20 place-items-center rounded-full bg-gradient-to-br from-[var(--coral)] to-[var(--coral-deep)] text-[var(--ink)] mb-6 shadow-lg">
                     <Send className="h-8 w-8" />
                   </div>
                   <h3 className="font-display text-3xl font-medium text-[var(--ocean-deep)]">
@@ -180,7 +180,7 @@ export function Enquiry() {
                     </p>
                     <button
                       type="submit"
-                      className="group inline-flex items-center gap-2.5 rounded-full bg-gradient-to-r from-[var(--coral)] to-[var(--coral-deep)] px-7 py-3.5 text-sm font-semibold text-white shadow-[0_10px_30px_-8px_rgba(231,111,81,0.7)] hover:shadow-[0_14px_40px_-8px_rgba(231,111,81,0.9)] hover:-translate-y-0.5 transition-all"
+                      className="group inline-flex items-center gap-2.5 rounded-full bg-gradient-to-r from-[var(--coral)] to-[var(--coral-deep)] px-7 py-3.5 text-sm font-semibold text-[var(--ink)] shadow-[0_10px_30px_-8px_rgba(180,140,40,0.7)] hover:shadow-[0_14px_40px_-8px_rgba(180,140,40,0.9)] hover:-translate-y-0.5 transition-all"
                     >
                       <Send className="h-4 w-4" />
                       Submit Enquiry

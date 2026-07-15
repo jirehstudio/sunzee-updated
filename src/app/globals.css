@@ -57,27 +57,26 @@
   --radius: 0.75rem;
 
   /* ============================================================
-     Sunzee Tropical Editorial palette
-     Inspired by stlucia.org + thgholidays.co.uk
-     - Light cream backgrounds (airy, tropical)
-     - Ocean teal as primary (Indian Ocean / tropical sea)
-     - Sunset coral + amber as warm secondary (sunshine)
-     - Sunny gold kept for tiny accents
+     Sunzee White / Blue / Gold palette
+     Client direction: white + blue + gold (no orange/coral)
+     - White / ivory backgrounds (airy, premium)
+     - Royal ocean blue as primary (Indian Ocean / sky / sea)
+     - Gold as the warm secondary (sunshine, luxury accent)
      ============================================================ */
 
   /* Brand */
-  --ocean:        oklch(0.62 0.11 215);   /* tropical ocean teal */
-  --ocean-deep:   oklch(0.48 0.10 215);   /* deeper teal for hover/text */
-  --coral:        oklch(0.72 0.16 50);    /* warm sunset coral */
-  --coral-deep:   oklch(0.62 0.17 45);    /* deeper coral */
-  --sand:         oklch(0.96 0.018 70);   /* warm sand tint */
-  --sand-deep:    oklch(0.92 0.022 70);   /* deeper sand */
-  --sky:          oklch(0.94 0.025 220);  /* soft sky tint */
-  --ink:          oklch(0.24 0.02 230);   /* deep navy ink (warmer than black) */
-  --gold:         oklch(0.82 0.13 78);    /* sunny gold (kept) */
+  --ocean:        oklch(0.55 0.16 245);   /* royal ocean blue */
+  --ocean-deep:   oklch(0.42 0.15 245);   /* deeper blue for hover/text */
+  --coral:        oklch(0.80 0.14 82);    /* GOLD (replaces coral) */
+  --coral-deep:   oklch(0.66 0.14 70);    /* deeper gold (replaces coral-deep) */
+  --sand:         oklch(0.97 0.015 75);   /* warm ivory tint */
+  --sand-deep:    oklch(0.93 0.020 75);   /* deeper ivory */
+  --sky:          oklch(0.95 0.025 240);  /* soft blue tint */
+  --ink:          oklch(0.22 0.03 245);   /* deep navy ink */
+  --gold:         oklch(0.80 0.14 82);    /* sunny gold */
 
   /* Surface */
-  --background:   oklch(0.985 0.008 75);  /* warm ivory */
+  --background:   oklch(0.99 0.005 75);   /* near-white ivory */
   --foreground:   var(--ink);
   --card:         #ffffff;
   --card-foreground: var(--ink);
@@ -88,24 +87,24 @@
   --secondary:    var(--sand);
   --secondary-foreground: var(--ocean-deep);
   --muted:        var(--sand-deep);
-  --muted-foreground: oklch(0.48 0.015 220);
-  --accent:       var(--coral);
-  --accent-foreground: #ffffff;
+  --muted-foreground: oklch(0.48 0.015 240);
+  --accent:       var(--gold);
+  --accent-foreground: var(--ink);
   --destructive:  oklch(0.577 0.245 27.325);
-  --border:       oklch(0.90 0.012 75);
-  --input:        oklch(0.90 0.012 75);
+  --border:       oklch(0.90 0.015 75);
+  --input:        oklch(0.90 0.015 75);
   --ring:         var(--ocean);
   --chart-1:      var(--ocean);
-  --chart-2:      var(--coral);
-  --chart-3:      var(--gold);
-  --chart-4:      var(--ocean-deep);
-  --chart-5:      var(--coral-deep);
+  --chart-2:      var(--gold);
+  --chart-3:      var(--ocean-deep);
+  --chart-4:      var(--coral-deep);
+  --chart-5:      var(--sand-deep);
   --sidebar:      var(--background);
   --sidebar-foreground: var(--ink);
   --sidebar-primary: var(--ocean);
   --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: var(--coral);
-  --sidebar-accent-foreground: #ffffff;
+  --sidebar-accent: var(--gold);
+  --sidebar-accent-foreground: var(--ink);
   --sidebar-border: var(--border);
   --sidebar-ring: var(--ocean);
 }
@@ -200,7 +199,7 @@
 }
 
 .text-shimmer {
-  background: linear-gradient(90deg, var(--coral) 0%, var(--gold) 50%, var(--coral) 100%);
+  background: linear-gradient(90deg, var(--gold) 0%, #fff6dc 50%, var(--gold) 100%);
   background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
@@ -233,8 +232,8 @@ html {
 
 /* Selection color */
 ::selection {
-  background: var(--coral);
-  color: #ffffff;
+  background: var(--gold);
+  color: var(--ink);
 }
 
 /* Ornamental divider helper */
@@ -246,15 +245,15 @@ html {
 .bg-paper {
   background-color: var(--background);
   background-image:
-    radial-gradient(at 10% 10%, rgba(11, 122, 140, 0.04) 0px, transparent 50%),
-    radial-gradient(at 90% 80%, rgba(231, 111, 81, 0.04) 0px, transparent 50%);
+    radial-gradient(at 10% 10%, rgba(28, 80, 170, 0.04) 0px, transparent 50%),
+    radial-gradient(at 90% 80%, rgba(201, 154, 64, 0.04) 0px, transparent 50%);
 }
 
 .bg-sand-tint {
   background-color: var(--sand);
   background-image:
-    radial-gradient(at 20% 0%, rgba(11, 122, 140, 0.05) 0px, transparent 60%),
-    radial-gradient(at 80% 100%, rgba(231, 111, 81, 0.05) 0px, transparent 60%);
+    radial-gradient(at 20% 0%, rgba(28, 80, 170, 0.05) 0px, transparent 60%),
+    radial-gradient(at 80% 100%, rgba(201, 154, 64, 0.05) 0px, transparent 60%);
 }
 
 .bg-sky-tint {
@@ -309,7 +308,7 @@ html {
 }
 
 .text-gradient-coral {
-  background: linear-gradient(135deg, var(--coral) 0%, var(--gold) 100%);
+  background: linear-gradient(135deg, var(--ocean) 0%, var(--gold) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;

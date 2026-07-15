@@ -33,7 +33,7 @@ export function FloatingActions() {
           type="button"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           aria-label="Back to top"
-          className="hidden md:grid fixed bottom-24 right-6 z-40 h-11 w-11 place-items-center rounded-full bg-gradient-to-br from-[var(--coral)] to-[var(--coral-deep)] text-white shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all"
+          className="hidden md:grid fixed bottom-24 right-6 z-40 h-11 w-11 place-items-center rounded-full bg-gradient-to-br from-[var(--coral)] to-[var(--coral-deep)] text-[var(--ink)] shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all"
         >
           <ArrowUp className="h-5 w-5" />
         </button>

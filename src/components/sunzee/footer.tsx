@@ -34,8 +34,12 @@ export function Footer() {
           {/* Brand col */}
           <div>
             <div className="flex items-center gap-3 mb-5">
-              <div className="relative h-14 w-14 shrink-0 rounded-full bg-gradient-to-br from-[var(--coral)] to-[var(--coral-deep)] grid place-items-center shadow-md ring-2 ring-white/15">
-                <span className="font-display text-2xl font-semibold text-white leading-none">S</span>
+              <div className="relative h-14 w-14 shrink-0 rounded-full overflow-hidden shadow-md ring-2 ring-white/15 bg-white">
+                <img
+                  src="/sunzee/logo.png"
+                  alt={`${SITE.name} logo`}
+                  className="h-full w-full object-contain p-0.5"
+                />
               </div>
               <div className="flex flex-col leading-none">
                 <span className="font-display text-xl font-semibold text-white">
@@ -146,7 +150,7 @@ export function Footer() {
               />
               <button
                 type="submit"
-                className="rounded-xl bg-gradient-to-r from-[var(--coral)] to-[var(--coral-deep)] px-4 py-2 text-xs font-semibold text-white hover:shadow-lg transition-all"
+                className="rounded-xl bg-gradient-to-r from-[var(--coral)] to-[var(--coral-deep)] px-4 py-2 text-xs font-semibold text-[var(--ink)] hover:shadow-lg transition-all"
               >
                 Subscribe
               </button>
