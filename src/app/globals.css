@@ -68,13 +68,13 @@
   --ocean:        oklch(0.68 0.12 245);   /* lighter ocean blue */
   --ocean-deep:   oklch(0.55 0.14 245);   /* medium blue for hover/text */
   --ocean-ink:    oklch(0.32 0.10 245);   /* deep navy blue for dark backgrounds (top bar, footer) */
-  --coral:        oklch(0.80 0.14 82);    /* gold (darker, for readable text on buttons) */
-  --coral-deep:   oklch(0.86 0.12 82);    /* lighter gold — LIGHTER than --coral, for gradient end */
+  --coral:        oklch(0.70 0.15 80);    /* rich real gold (metallic gold tone) */
+  --coral-deep:   oklch(0.78 0.13 82);    /* lighter gold — LIGHTER than --coral, for gradient end */
   --sand:         oklch(0.97 0.015 75);   /* warm ivory tint */
   --sand-deep:    oklch(0.93 0.020 75);   /* deeper ivory */
   --sky:          oklch(0.95 0.025 240);  /* soft sky tint */
   --ink:          oklch(0.22 0.03 245);   /* deep navy ink */
-  --gold:         oklch(0.80 0.14 82);    /* gold */
+  --gold:         oklch(0.70 0.15 80);    /* rich real gold */
 
   /* Surface */
   --background:   oklch(0.99 0.005 75);   /* near-white ivory */
@@ -325,3 +325,4 @@ html {
 }
 /* trigger recompile */
 /* recompile trigger */
+/* recompile */
