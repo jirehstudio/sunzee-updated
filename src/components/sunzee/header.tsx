@@ -35,21 +35,13 @@ export function Header() {
         <div className="container mx-auto max-w-7xl px-6">
           <div className="flex items-center justify-between gap-6 py-3 md:py-3.5">
             {/* Logo */}
-            <a href="/" className="flex items-center gap-2.5 group" aria-label={SITE.name}>
+            <a href="/" className="flex items-center group" aria-label={SITE.name}>
               <div className="relative h-12 w-12 md:h-16 md:w-16 shrink-0 rounded-full overflow-hidden shadow-md ring-2 ring-white bg-white">
                 <img
                   src="/sunzee/logo.png"
                   alt={`${SITE.name} logo`}
                   className="h-full w-full object-contain p-0.5"
                 />
-              </div>
-              <div className="flex flex-col leading-none">
-                <span className="font-display text-xl md:text-2xl font-semibold text-[var(--ocean-deep)]">
-                  Sunzee
-                </span>
-                <span className="font-display text-xs md:text-sm font-medium text-[var(--gold)] italic -mt-0.5">
-                  Holidays
-                </span>
               </div>
             </a>
 
@@ -136,10 +128,12 @@ export function Header() {
               </a>
               <a
                 href="/#enquiry"
-                className="hidden md:inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[var(--coral)] to-[var(--coral-deep)] px-5 py-2.5 text-sm font-semibold text-[var(--ink)] shadow-[0_8px_24px_-8px_rgba(180,140,40,0.6)] hover:shadow-[0_12px_32px_-8px_rgba(180,140,40,0.8)] hover:-translate-y-0.5 transition-all"
+                className="group hidden md:inline-flex items-center gap-2.5 rounded-full bg-gradient-to-r from-[var(--coral)] to-[var(--coral-deep)] px-6 md:px-7 py-3 md:py-3.5 text-sm font-semibold text-[var(--ink)] shadow-[0_12px_36px_-10px_rgba(180,140,40,0.7)] hover:shadow-[0_18px_46px_-10px_rgba(180,140,40,0.9)] hover:-translate-y-0.5 transition-all"
               >
                 <span>Plan My Trip</span>
-                <span className="text-white/70">→</span>
+                <span className="grid h-6 w-6 place-items-center rounded-full bg-white/20 group-hover:translate-x-1 transition-transform">
+                  →
+                </span>
               </a>
               <button
                 type="button"
@@ -163,17 +157,13 @@ export function Header() {
           />
           <div className="absolute right-0 top-0 bottom-0 w-80 max-w-[85%] bg-white shadow-2xl flex flex-col">
             <div className="flex items-center justify-between p-4 border-b border-[var(--ocean)]/15">
-              <div className="flex items-center gap-2">
+              <div className="flex items-center">
                 <div className="relative h-10 w-10 shrink-0 rounded-full overflow-hidden shadow-md bg-white ring-1 ring-[var(--ocean)]/15">
                   <img
                     src="/sunzee/logo.png"
                     alt={`${SITE.name} logo`}
                     className="h-full w-full object-contain p-0.5"
                   />
-                </div>
-                <div className="flex flex-col leading-none">
-                  <span className="font-display text-base font-semibold text-[var(--ocean-deep)]">Sunzee</span>
-                  <span className="font-display text-[10px] font-medium text-[var(--gold)] italic -mt-0.5">Holidays</span>
                 </div>
               </div>
               <button
@@ -216,9 +206,12 @@ export function Header() {
               <a
                 href="/#enquiry"
                 onClick={() => setMobileOpen(false)}
-                className="block w-full rounded-full bg-gradient-to-r from-[var(--coral)] to-[var(--coral-deep)] px-5 py-3 text-center text-sm font-semibold text-[var(--ink)]"
+                className="group flex w-full items-center justify-center gap-2.5 rounded-full bg-gradient-to-r from-[var(--coral)] to-[var(--coral-deep)] px-6 py-3.5 text-sm font-semibold text-[var(--ink)] shadow-[0_12px_36px_-10px_rgba(180,140,40,0.7)] transition-all"
               >
-                Plan My Trip
+                <span>Plan My Trip</span>
+                <span className="grid h-6 w-6 place-items-center rounded-full bg-white/20 group-hover:translate-x-1 transition-transform">
+                  →
+                </span>
               </a>
               <a
                 href={`tel:${SITE.phoneRaw}`}

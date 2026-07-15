@@ -33,21 +33,13 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
           {/* Brand col */}
           <div>
-            <div className="flex items-center gap-3 mb-5">
+            <div className="flex items-center mb-5">
               <div className="relative h-14 w-14 shrink-0 rounded-full overflow-hidden shadow-md ring-2 ring-white/15 bg-white">
                 <img
                   src="/sunzee/logo.png"
                   alt={`${SITE.name} logo`}
                   className="h-full w-full object-contain p-0.5"
                 />
-              </div>
-              <div className="flex flex-col leading-none">
-                <span className="font-display text-xl font-semibold text-white">
-                  Sunzee
-                </span>
-                <span className="font-display text-xl font-semibold text-[var(--gold)] italic">
-                  Holidays
-                </span>
               </div>
             </div>
             <p className="text-sm text-white/70 leading-relaxed mb-5 font-light">
