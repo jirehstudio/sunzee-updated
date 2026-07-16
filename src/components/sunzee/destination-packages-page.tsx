@@ -202,7 +202,7 @@ export function DestinationPackagesPage({ data }: { data: DestinationPackages })
                             <div className="text-[10px] uppercase tracking-[0.2em] text-[var(--ink)]/50">
                               From
                             </div>
-                            <div className="font-display text-2xl font-semibold text-[var(--ocean-deep)]">
+                            <div className="font-display text-2xl font-semibold text-gradient-ocean">
                               ${pkg.price}
                             </div>
                           </div>

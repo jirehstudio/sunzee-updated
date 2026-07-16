@@ -21,7 +21,7 @@ export function Experiences() {
         <Reveal className="text-center max-w-3xl mx-auto mb-14">
           <SectionLabel>What we do</SectionLabel>
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-[var(--ink)] mt-5 leading-[1.05]">
-            Curated <span className="italic text-gradient-coral">Experiences</span>
+            Curated <span className="italic text-gradient-ocean">Experiences</span>
           </h2>
           <Ornament className="mt-6" />
           <p className="mt-6 text-[var(--ink)]/65 text-base md:text-lg leading-relaxed font-light">

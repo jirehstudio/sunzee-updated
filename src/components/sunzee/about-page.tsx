@@ -273,7 +273,7 @@ export function AboutPage() {
               <SectionLabel>Etymology</SectionLabel>
               <h2 className="font-display text-4xl md:text-5xl font-medium text-[var(--ink)] mt-5 leading-tight">
                 What is the meaning of
-                <span className="block italic text-gradient-coral">Sunzee?</span>
+                <span className="block italic text-gradient-ocean">Sunzee?</span>
               </h2>
               <Ornament className="my-6 justify-start" />
               <p className="text-base md:text-lg text-[var(--ink)]/75 leading-relaxed font-light">

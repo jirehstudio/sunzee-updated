@@ -27,8 +27,11 @@ export const NAV = [
     href: "/egypt-tour-packages",
     children: [
       { label: "Egypt Tour Packages", href: "/egypt-tour-packages" },
-      { label: "Reunion Tour Packages", href: "/reunion-tour-packages" },
+      { label: "Kenya Tour Packages", href: "/kenya-tour-packages" },
+      { label: "Zanzibar Tour Packages", href: "/zanzibar-tour-packages" },
+      { label: "Mauritius Tour Packages", href: "/mauritius-tour-packages" },
       { label: "Madagascar Tour Packages", href: "/madagascar-tour-packages" },
+      { label: "Reunion Tour Packages", href: "/reunion-tour-packages" },
     ],
   },
   { label: "About", href: "/about" },
@@ -53,7 +56,7 @@ export const DESTINATIONS = [
   {
     name: "Kenya",
     caption: "Plan Your Tour to Kenya With Us.",
-    href: "#kenya",
+    href: "/kenya-tour-packages",
     image: "https://sfile.chatglm.cn/images-ppt/640772c2943f.jpg",
     gallery: [
       "https://sfile.chatglm.cn/images-ppt/208fd6674588.jpg",
@@ -66,7 +69,7 @@ export const DESTINATIONS = [
   {
     name: "Zanzibar",
     caption: "Plan Your Tour to Zanzibar With Us.",
-    href: "#zanzibar",
+    href: "/zanzibar-tour-packages",
     image: "https://sfile.chatglm.cn/images-ppt/f2a6013672ab.jpg",
     gallery: [
       "https://sfile.chatglm.cn/images-ppt/208fd6674588.jpg",
@@ -79,7 +82,7 @@ export const DESTINATIONS = [
   {
     name: "Mauritius",
     caption: "Plan Your Tour to Mauritius With Us.",
-    href: "#mauritius",
+    href: "/mauritius-tour-packages",
     image: "https://sfile.chatglm.cn/images-ppt/208fd6674588.jpg",
     gallery: [
       "https://sfile.chatglm.cn/images-ppt/f2a6013672ab.jpg",
@@ -121,8 +124,11 @@ export const DESTINATIONS = [
 
 export const TOUR_PACKAGES = [
   { label: "Egypt Tour Packages", href: "/egypt-tour-packages" },
-  { label: "Reunion Tour Packages", href: "/reunion-tour-packages" },
+  { label: "Kenya Tour Packages", href: "/kenya-tour-packages" },
+  { label: "Zanzibar Tour Packages", href: "/zanzibar-tour-packages" },
+  { label: "Mauritius Tour Packages", href: "/mauritius-tour-packages" },
   { label: "Madagascar Tour Packages", href: "/madagascar-tour-packages" },
+  { label: "Reunion Tour Packages", href: "/reunion-tour-packages" },
 ] as const;
 
 export const IMPORTANT_LINKS = [

@@ -1,4 +1,3 @@
-import { TopBar } from "@/components/sunzee/top-bar";
 import { Header } from "@/components/sunzee/header";
 import { Hero } from "@/components/sunzee/hero";
 import { Destinations } from "@/components/sunzee/destinations";
@@ -19,7 +18,6 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-background">
       <ScrollProgress />
-      <TopBar />
       <Header />
       <main className="flex-1">
         <Hero />

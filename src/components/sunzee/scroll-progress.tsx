@@ -28,7 +28,7 @@ export function ScrollProgress() {
       aria-hidden="true"
     >
       <div
-        className="h-full bg-gradient-to-r from-[var(--ocean)] via-[var(--coral)] to-[var(--gold)] transition-[width] duration-150 ease-out"
+        className="h-full bg-gradient-to-r from-[var(--ocean)] to-[var(--ocean-deep)] transition-[width] duration-150 ease-out"
         style={{ width: `${progress}%` }}
       />
     </div>

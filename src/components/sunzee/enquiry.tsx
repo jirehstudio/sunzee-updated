@@ -29,7 +29,7 @@ export function Enquiry() {
           <SectionLabel>Plan your journey</SectionLabel>
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-[var(--ink)] mt-5 leading-[1.05]">
             Begin Your
-            <span className="italic text-gradient-coral"> Story</span>
+            <span className="italic text-gradient-ocean"> Story</span>
           </h2>
           <Ornament className="mt-6" />
           <p className="mt-6 text-[var(--ink)]/65 text-base md:text-lg leading-relaxed font-light">
@@ -63,7 +63,7 @@ export function Enquiry() {
                 </div>
                 <h3 className="font-display text-3xl md:text-4xl font-medium leading-tight">
                   Plan your journey
-                  <span className="block italic text-[var(--gold)]">with us</span>
+                  <span className="block italic text-gradient-gold">with us</span>
                 </h3>
 
                 <div className="mt-8 space-y-5 flex-1">
