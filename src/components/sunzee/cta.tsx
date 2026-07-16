@@ -31,7 +31,7 @@ export function CTA() {
           </span>
         </div>
 
-        <h2 className="font-display text-xl sm:text-4xl md:text-5xl lg:text-7xl font-medium uppercase leading-[1.15] text-white tracking-tight drop-shadow-lg">
+        <h2 className="text-xl sm:text-4xl md:text-5xl lg:text-7xl font-medium uppercase leading-[1.15] text-white tracking-tight drop-shadow-lg">
           Relax And Enjoy Your
           <br />
           <span className="italic text-shimmer">Holiday With Sunzee Holidays</span>
@@ -39,7 +39,7 @@ export function CTA() {
 
         <Ornament className="my-8" />
 
-        <p className="text-xl md:text-2xl text-white/90 font-display italic font-light">
+        <p className="text-xl md:text-2xl text-white/90 italic font-light">
           Luxury Hotel &amp; Best Resort
         </p>
 

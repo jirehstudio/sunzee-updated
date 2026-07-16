@@ -27,7 +27,7 @@ export function Enquiry() {
       <div className="container mx-auto max-w-7xl px-6 relative">
         <Reveal className="text-center max-w-3xl mx-auto mb-14">
           <SectionLabel>Plan your journey</SectionLabel>
-          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-[var(--ink)] mt-5 leading-[1.05]">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-[var(--ink)] mt-5 leading-[1.05]">
             Begin Your
             <span className="italic text-gradient-ocean"> Story</span>
           </h2>
@@ -61,7 +61,7 @@ export function Enquiry() {
                     Get in touch
                   </span>
                 </div>
-                <h3 className="font-display text-3xl md:text-4xl font-medium leading-tight">
+                <h3 className="text-3xl md:text-4xl font-medium leading-tight">
                   Plan your journey
                   <span className="block italic text-gradient-gold">with us</span>
                 </h3>
@@ -75,7 +75,7 @@ export function Enquiry() {
                 </div>
 
                 <div className="mt-8 pt-6 border-t border-[var(--gold)]/25">
-                  <p className="text-xs text-white/70 italic font-display">
+                  <p className="text-xs text-white/70 italic">
                     &ldquo;Travel is the only thing you buy that makes you richer.&rdquo;
                   </p>
                 </div>
@@ -95,7 +95,7 @@ export function Enquiry() {
                   <div className="grid h-20 w-20 place-items-center rounded-full bg-gradient-to-br from-[var(--coral)] to-[var(--coral-deep)] text-[var(--ink)] mb-6 shadow-lg">
                     <Send className="h-8 w-8" />
                   </div>
-                  <h3 className="font-display text-3xl font-medium text-[var(--ocean-deep)]">
+                  <h3 className="text-3xl font-medium text-[var(--ocean-deep)]">
                     Thank you for your enquiry
                   </h3>
                   <Ornament className="my-5" />

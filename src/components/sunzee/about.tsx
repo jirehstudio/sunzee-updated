@@ -67,7 +67,7 @@ export function About() {
                   <Award className="h-4 w-4" />
                   <span className="text-[10px] tracking-[0.3em] uppercase font-semibold">Specialists in</span>
                 </div>
-                <div className="font-display text-2xl font-semibold leading-none">East Africa</div>
+                <div className="text-2xl font-semibold leading-none">East Africa</div>
                 <div className="text-[10px] tracking-[0.2em] uppercase opacity-80 mt-1">&amp; Indian Ocean</div>
               </div>
             </div>
@@ -81,7 +81,7 @@ export function About() {
               </SectionLabel>
             </Reveal>
             <Reveal delay={0.1}>
-              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-[var(--ink)] leading-[1.05] mt-5">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-[var(--ink)] leading-[1.05] mt-5">
                 The Best Destination
                 <span className="block italic text-gradient-ocean">Management Company</span>
                 <span className="block">in East Africa</span>
@@ -127,7 +127,7 @@ export function About() {
                     className="rounded-2xl border border-[var(--ocean)]/20 bg-[var(--sand)]/60 backdrop-blur p-5 text-center"
                   >
                     <s.icon className="h-5 w-5 text-[var(--coral)] mx-auto mb-2" />
-                    <div className="font-display text-3xl md:text-4xl font-semibold text-[var(--ocean-deep)]">
+                    <div className="text-3xl md:text-4xl font-semibold text-[var(--ocean-deep)]">
                       <Counter value={s.value} />
                     </div>
                     <div className="text-[11px] md:text-xs text-[var(--ink)]/60 mt-1 tracking-wide">

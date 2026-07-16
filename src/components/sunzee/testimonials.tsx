@@ -11,7 +11,7 @@ export function Testimonials() {
       <div className="container mx-auto max-w-7xl px-6 relative">
         <Reveal className="text-center max-w-3xl mx-auto mb-14">
           <SectionLabel>Traveller stories</SectionLabel>
-          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-[var(--ink)] mt-5 leading-[1.05]">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-[var(--ink)] mt-5 leading-[1.05]">
             Loved by <span className="italic text-gradient-ocean">travellers &amp; agents</span>
           </h2>
           <Ornament className="mt-6" />
@@ -37,17 +37,17 @@ export function Testimonials() {
                   </div>
 
                   {/* Quote */}
-                  <p className="text-base md:text-lg text-[var(--ink)]/85 leading-relaxed font-light font-display italic mb-6">
+                  <p className="text-base md:text-lg text-[var(--ink)]/85 leading-relaxed font-light italic mb-6">
                     &ldquo;{t.quote}&rdquo;
                   </p>
 
                   {/* Author */}
                   <div className="flex items-center gap-3 pt-5 border-t border-[var(--ocean)]/12">
-                    <div className="grid h-12 w-12 place-items-center rounded-full bg-gradient-to-br from-[var(--ocean)] to-[var(--ocean-deep)] text-white font-display text-base font-semibold shrink-0">
+                    <div className="grid h-12 w-12 place-items-center rounded-full bg-gradient-to-br from-[var(--ocean)] to-[var(--ocean-deep)] text-white text-base font-semibold shrink-0">
                       {t.avatar}
                     </div>
                     <div>
-                      <div className="font-display text-base font-semibold text-[var(--ink)] leading-tight">
+                      <div className="text-base font-semibold text-[var(--ink)] leading-tight">
                         {t.name}
                       </div>
                       <div className="text-xs text-[var(--ink)]/55 mt-0.5">

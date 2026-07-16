@@ -24,7 +24,7 @@ export function Destinations() {
         {/* Section header */}
         <Reveal className="text-center max-w-3xl mx-auto mb-14">
           <SectionLabel>Where we travel</SectionLabel>
-          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-[var(--ink)] mt-5 leading-[1.05]">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-[var(--ink)] mt-5 leading-[1.05]">
             Top <span className="italic text-gradient-ocean">Destinations</span>
           </h2>
           <Ornament className="mt-6" />
@@ -75,7 +75,7 @@ export function Destinations() {
 
                     {/* Number badge */}
                     <div className="absolute top-5 left-5 flex items-center gap-2">
-                      <span className="font-display text-4xl md:text-5xl font-light text-[var(--gold)]/95 leading-none drop-shadow-md">
+                      <span className="text-4xl md:text-5xl font-light text-[var(--gold)]/95 leading-none drop-shadow-md">
                         0{i + 1}
                       </span>
                       <span className="h-px w-8 bg-[var(--gold)]/70" />
@@ -87,7 +87,7 @@ export function Destinations() {
                         <MapPin className="h-3 w-3" />
                         {d.region}
                       </div>
-                      <h3 className={`font-display font-medium leading-tight mb-2 ${
+                      <h3 className={`font-medium leading-tight mb-2 ${
                         featured
                           ? "text-2xl md:text-3xl lg:text-5xl"
                           : "text-2xl md:text-3xl"
@@ -101,7 +101,7 @@ export function Destinations() {
                       }`}>
                         {d.blurb}
                       </p>
-                      <p className="mt-3 text-xs md:text-sm font-medium text-[var(--gold)] italic font-display">
+                      <p className="mt-3 text-xs md:text-sm font-medium text-[var(--gold)] italic">
                         {d.caption}
                       </p>
                     </div>

@@ -20,7 +20,7 @@ export function Experiences() {
       <div className="container mx-auto max-w-7xl px-6 relative">
         <Reveal className="text-center max-w-3xl mx-auto mb-14">
           <SectionLabel>What we do</SectionLabel>
-          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-[var(--ink)] mt-5 leading-[1.05]">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-[var(--ink)] mt-5 leading-[1.05]">
             Curated <span className="italic text-gradient-ocean">Experiences</span>
           </h2>
           <Ornament className="mt-6" />
@@ -61,7 +61,7 @@ export function Experiences() {
 
                     {/* Title + blurb */}
                     <div className="absolute inset-x-0 bottom-0 p-5 md:p-6 text-white">
-                      <h3 className="font-display text-2xl md:text-3xl font-semibold leading-tight mb-2">
+                      <h3 className="text-2xl md:text-3xl font-semibold leading-tight mb-2">
                         {exp.title}
                       </h3>
                       <p className="text-sm text-white/85 leading-relaxed max-w-md">

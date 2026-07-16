@@ -49,7 +49,7 @@ export function Footer() {
                 <Compass className="h-7 w-7 text-white" />
               </div>
               <div>
-                <h3 className="font-display text-2xl md:text-3xl font-semibold leading-tight">
+                <h3 className="text-2xl md:text-3xl font-semibold leading-tight">
                   Ready to wander somewhere new?
                 </h3>
                 <p className="text-sm text-white/65 mt-1 font-light">
@@ -84,7 +84,7 @@ export function Footer() {
                 />
               </div>
             </div>
-            <p className="font-display italic text-lg text-[var(--gold)] mb-3 leading-tight">
+            <p className="italic text-lg text-[var(--gold)] mb-3 leading-tight">
               Sun &amp; Zee — Sun &amp; Sea
             </p>
             <p className="text-sm text-white/70 leading-relaxed mb-6 font-light">
@@ -135,7 +135,7 @@ export function Footer() {
 
           {/* Browse tour */}
           <div>
-            <h3 className="font-display text-xl font-semibold mb-5 text-white flex items-center gap-2">
+            <h3 className="text-xl font-semibold mb-5 text-white flex items-center gap-2">
               <span className="h-px w-6 bg-[var(--gold)]" />
               Browse Tour
             </h3>
@@ -156,7 +156,7 @@ export function Footer() {
 
           {/* Important links */}
           <div>
-            <h3 className="font-display text-xl font-semibold mb-5 text-white flex items-center gap-2">
+            <h3 className="text-xl font-semibold mb-5 text-white flex items-center gap-2">
               <span className="h-px w-6 bg-[var(--gold)]" />
               Important Links
             </h3>
@@ -193,7 +193,7 @@ export function Footer() {
 
           {/* Connect + newsletter */}
           <div>
-            <h3 className="font-display text-xl font-semibold mb-5 text-white flex items-center gap-2">
+            <h3 className="text-xl font-semibold mb-5 text-white flex items-center gap-2">
               <span className="h-px w-6 bg-[var(--gold)]" />
               Stay Inspired
             </h3>
@@ -246,7 +246,7 @@ export function Footer() {
             <span className="h-1 w-1 rounded-full bg-[var(--gold)]" />
             {SITE.copyright}
           </p>
-          <p className="text-xs text-white/55 font-display italic">
+          <p className="text-xs text-white/55 italic">
             Sun &amp; Zee · Sun &amp; Sea · Crafted for travellers &amp; agents everywhere
           </p>
         </div>

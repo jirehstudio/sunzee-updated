@@ -11,7 +11,7 @@ export function Moments() {
       <div className="container mx-auto max-w-7xl px-6 relative">
         <Reveal className="text-center max-w-3xl mx-auto mb-14">
           <SectionLabel>Travel moments</SectionLabel>
-          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-[var(--ink)] mt-5 leading-[1.05]">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-[var(--ink)] mt-5 leading-[1.05]">
             Postcards from <span className="italic text-gradient-ocean">our travellers</span>
           </h2>
           <Ornament className="mt-6" />
@@ -47,7 +47,7 @@ export function Moments() {
                 <div className="text-[9px] font-semibold tracking-[0.25em] uppercase text-[var(--gold)] mb-1 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   Sunzee Moment
                 </div>
-                <div className="font-display text-base md:text-lg font-medium leading-tight flex items-center gap-1.5">
+                <div className="text-base md:text-lg font-medium leading-tight flex items-center gap-1.5">
                   {m.caption}
                   <ArrowUpRight className="h-3.5 w-3.5 opacity-0 group-hover:opacity-100 transition-opacity" />
                 </div>

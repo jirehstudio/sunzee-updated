@@ -66,7 +66,7 @@ export function Hero() {
         </div>
 
         {/* Top-right slide counter — magazine-style */}
-        <div className="absolute top-6 md:top-8 right-6 md:right-10 z-10 hidden md:flex items-center gap-2 text-white/70 text-xs tracking-[0.2em] font-display">
+        <div className="absolute top-6 md:top-8 right-6 md:right-10 z-10 hidden md:flex items-center gap-2 text-white/70 text-xs tracking-[0.2em]">
           <span className="text-white text-base font-semibold">
             {String(index + 1).padStart(2, "0")}
           </span>
@@ -89,7 +89,7 @@ export function Hero() {
             </div>
 
             {/* Unified headline — doesn't change per slide */}
-            <h1 className="font-display text-[2.75rem] sm:text-6xl md:text-7xl lg:text-[8rem] font-medium leading-[0.92] text-white drop-shadow-xl tracking-tight">
+            <h1 className="text-[2.75rem] sm:text-6xl md:text-7xl lg:text-[8rem] font-medium leading-[0.92] text-white drop-shadow-xl tracking-tight">
               Find your
               <span className="block italic text-shimmer">somewhere</span>
             </h1>
@@ -97,7 +97,7 @@ export function Hero() {
             {/* Per-slide evocative caption */}
             <p
               key={`caption-${index}`}
-              className="mt-4 md:mt-5 font-display italic text-white/90 text-lg md:text-2xl font-light animate-[fadeInUp_700ms_ease-out_150ms_both]"
+              className="mt-4 md:mt-5 italic text-white/90 text-lg md:text-2xl font-light animate-[fadeInUp_700ms_ease-out_150ms_both]"
             >
               {cap.caption}
             </p>

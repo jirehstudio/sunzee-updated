@@ -65,11 +65,11 @@ export function DestinationPackagesPage({ data }: { data: DestinationPackages })
               East Africa &amp; Indian Ocean
             </span>
           </div>
-          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium text-white leading-[1.05] drop-shadow-lg">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium text-white leading-[1.05] drop-shadow-lg">
             {data.title}
           </h1>
           <Ornament className="my-5" />
-          <p className="text-base md:text-lg text-white/90 font-light italic font-display">
+          <p className="text-base md:text-lg text-white/90 font-light italic">
             {data.subtitle}
           </p>
         </div>
@@ -132,7 +132,7 @@ export function DestinationPackagesPage({ data }: { data: DestinationPackages })
                   <SectionLabel>
                     {data.name} journeys
                   </SectionLabel>
-                  <h2 className="font-display text-4xl md:text-5xl font-medium text-[var(--ink)] mt-4 leading-tight">
+                  <h2 className="text-4xl md:text-5xl font-medium text-[var(--ink)] mt-4 leading-tight">
                     Packages
                   </h2>
                 </div>
@@ -166,7 +166,7 @@ export function DestinationPackagesPage({ data }: { data: DestinationPackages })
                         </div>
                         {/* Title overlay */}
                         <div className="absolute inset-x-0 bottom-0 p-4">
-                          <h3 className="font-display text-xl md:text-2xl font-medium text-white leading-tight drop-shadow-md">
+                          <h3 className="text-xl md:text-2xl font-medium text-white leading-tight drop-shadow-md">
                             {pkg.name}
                           </h3>
                         </div>
@@ -202,7 +202,7 @@ export function DestinationPackagesPage({ data }: { data: DestinationPackages })
                             <div className="text-[10px] uppercase tracking-[0.2em] text-[var(--ink)]/50">
                               From
                             </div>
-                            <div className="font-display text-2xl font-semibold text-gradient-ocean">
+                            <div className="text-2xl font-semibold text-gradient-ocean">
                               ${pkg.price}
                             </div>
                           </div>
@@ -244,7 +244,7 @@ export function DestinationPackagesPage({ data }: { data: DestinationPackages })
                   <SectionLabel>
                     <span className="text-[var(--gold)]">Need a custom itinerary?</span>
                   </SectionLabel>
-                  <h3 className="font-display text-2xl md:text-3xl font-medium mt-3">
+                  <h3 className="text-2xl md:text-3xl font-medium mt-3">
                     Tailor your dream {data.name} journey
                   </h3>
                   <p className="text-sm text-white/80 mt-2 max-w-xl">
@@ -268,7 +268,7 @@ export function DestinationPackagesPage({ data }: { data: DestinationPackages })
                 <div className="rounded-3xl border border-[var(--ocean)]/15 bg-white p-5 shadow-sm">
                   <div className="flex items-center gap-2 mb-4">
                     <Search className="h-4 w-4 text-[var(--coral)]" />
-                    <h3 className="font-display text-lg font-semibold text-[var(--ocean-deep)]">
+                    <h3 className="text-lg font-semibold text-[var(--ocean-deep)]">
                       Search
                     </h3>
                   </div>
@@ -400,7 +400,7 @@ export function DestinationPackagesPage({ data }: { data: DestinationPackages })
           <SectionLabel>
             <span className="text-[var(--gold)]">Plan your {data.name} journey</span>
           </SectionLabel>
-          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium mt-5 leading-[1.05]">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium mt-5 leading-[1.05]">
             Begin your
             <span className="block italic text-[var(--gold)]">extraordinary story</span>
           </h2>
@@ -435,7 +435,7 @@ export function DestinationPackagesPage({ data }: { data: DestinationPackages })
           />
           <div className="absolute right-0 top-0 bottom-0 w-80 max-w-[85%] bg-white shadow-2xl flex flex-col overflow-y-auto">
             <div className="flex items-center justify-between p-4 border-b border-[var(--ocean)]/15 sticky top-0 bg-white z-10">
-              <h3 className="font-display text-lg font-semibold text-[var(--ocean-deep)]">Filters</h3>
+              <h3 className="text-lg font-semibold text-[var(--ocean-deep)]">Filters</h3>
               <button
                 type="button"
                 onClick={() => setMobileFilterOpen(false)}
@@ -454,7 +454,7 @@ export function DestinationPackagesPage({ data }: { data: DestinationPackages })
                 className="w-full rounded-xl border border-[var(--ocean)]/25 bg-[var(--sand)]/40 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[var(--ocean)]/40"
               />
               <div>
-                <h4 className="font-display text-base font-semibold text-[var(--ocean-deep)] mb-2">Price Range</h4>
+                <h4 className="text-base font-semibold text-[var(--ocean-deep)] mb-2">Price Range</h4>
                 <input
                   type="range"
                   min={500}
@@ -470,7 +470,7 @@ export function DestinationPackagesPage({ data }: { data: DestinationPackages })
                 </div>
               </div>
               <div>
-                <h4 className="font-display text-base font-semibold text-[var(--ocean-deep)] mb-2">Facilities</h4>
+                <h4 className="text-base font-semibold text-[var(--ocean-deep)] mb-2">Facilities</h4>
                 <div className="space-y-2">
                   {FILTER_FACILITIES.map((f) => (
                     <label key={f} className="flex items-center gap-2.5 cursor-pointer">
@@ -517,7 +517,7 @@ function FilterCard({
     <div className="rounded-3xl border border-[var(--ocean)]/15 bg-white p-5 shadow-sm">
       <div className="flex items-center gap-2 mb-4">
         {typeof icon === "string" ? (
-          <span className="grid h-7 w-7 place-items-center rounded-lg bg-[var(--coral)]/15 text-[var(--coral-deep)] font-display font-bold text-sm">
+          <span className="grid h-7 w-7 place-items-center rounded-lg bg-[var(--coral)]/15 text-[var(--coral-deep)] font-bold text-sm">
             {icon}
           </span>
         ) : (
@@ -525,7 +525,7 @@ function FilterCard({
             {icon}
           </span>
         )}
-        <h3 className="font-display text-lg font-semibold text-[var(--ocean-deep)]">
+        <h3 className="text-lg font-semibold text-[var(--ocean-deep)]">
           {title}
         </h3>
       </div>

@@ -34,7 +34,7 @@ export function TopBar() {
             </a>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-3 md:gap-4">
-            <span className="flex items-center gap-2 text-white/80 italic font-display text-xs md:text-sm">
+            <span className="flex items-center gap-2 text-white/80 italic text-xs md:text-sm">
               <MapPin className="h-3 w-3 text-[var(--gold)]" />
               East Africa &amp; Indian Ocean
             </span>

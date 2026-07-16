@@ -28,7 +28,7 @@ export function WhyChooseUs() {
       <div className="container mx-auto max-w-7xl px-6 relative">
         <Reveal className="text-center max-w-3xl mx-auto mb-14">
           <SectionLabel>Why travel with us</SectionLabel>
-          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-[var(--ink)] mt-5 leading-[1.05]">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-[var(--ink)] mt-5 leading-[1.05]">
             The Sunzee <span className="italic text-gradient-ocean">difference</span>
           </h2>
           <Ornament className="mt-6" />
@@ -54,7 +54,7 @@ export function WhyChooseUs() {
                     <div className="text-[10px] font-semibold tracking-[0.25em] uppercase text-[var(--coral-deep)] mb-2">
                       0{i + 1}
                     </div>
-                    <h3 className="font-display text-xl md:text-2xl font-semibold text-[var(--ink)] leading-tight mb-3">
+                    <h3 className="text-xl md:text-2xl font-semibold text-[var(--ink)] leading-tight mb-3">
                       {item.title}
                     </h3>
                     <p className="text-sm text-[var(--ink)]/65 leading-relaxed font-light">

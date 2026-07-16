@@ -24,13 +24,13 @@ export function Partners() {
             <SectionLabel>
               <span className="text-[var(--coral-deep)]">Trusted worldwide</span>
             </SectionLabel>
-            <h3 className="font-display text-4xl md:text-5xl font-medium mt-5 leading-[1.05] text-[var(--ink)]">
+            <h3 className="text-4xl md:text-5xl font-medium mt-5 leading-[1.05] text-[var(--ink)]">
               Our
               <span className="block italic text-gradient-ocean">Partners</span>
             </h3>
             <div className="flex items-center gap-2 mt-5 text-[var(--ink)]/55 text-sm">
               <span className="h-1 w-1 rounded-full bg-[var(--coral)]" />
-              <span className="italic font-display">Crafted together</span>
+              <span className="italic">Crafted together</span>
             </div>
             <p className="mt-3 text-sm text-[var(--ink)]/65 leading-relaxed">
               We collaborate with the finest hotels, resorts and ground
@@ -59,7 +59,7 @@ export function Partners() {
                       />
                     </div>
                     <div className="px-3 py-2.5 text-center border-t border-[var(--ocean)]/10 bg-white">
-                      <span className="text-xs font-semibold tracking-[0.25em] text-[var(--ocean-deep)] uppercase font-display">
+                      <span className="text-xs font-semibold tracking-[0.25em] text-[var(--ocean-deep)] uppercase">
                         {p.name}
                       </span>
                     </div>

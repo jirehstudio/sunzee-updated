@@ -43,12 +43,12 @@ export function AboutPage() {
               Our Story
             </span>
           </div>
-          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium text-white leading-[1.05] drop-shadow-lg">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium text-white leading-[1.05] drop-shadow-lg">
             About
             <span className="italic text-[var(--gold)]"> Us</span>
           </h1>
           <Ornament className="my-5" />
-          <p className="text-base md:text-lg text-white/90 font-light italic font-display">
+          <p className="text-base md:text-lg text-white/90 font-light italic">
             Crafting journeys, building partnerships
           </p>
         </div>
@@ -114,7 +114,7 @@ export function AboutPage() {
             <div>
               <Reveal>
                 <SectionLabel>Welcome to Sunzee</SectionLabel>
-                <h2 className="font-display text-4xl md:text-5xl font-medium text-[var(--ink)] mt-5 leading-tight">
+                <h2 className="text-4xl md:text-5xl font-medium text-[var(--ink)] mt-5 leading-tight">
                   A bridge between
                   <span className="italic text-gradient-ocean"> travel agents &amp; travellers</span>
                 </h2>
@@ -152,7 +152,7 @@ export function AboutPage() {
             <SectionLabel>
               <span className="text-[var(--coral-deep)]">Leadership</span>
             </SectionLabel>
-            <h2 className="font-display text-4xl md:text-5xl font-medium mt-5 leading-tight text-[var(--ink)]">
+            <h2 className="text-4xl md:text-5xl font-medium mt-5 leading-tight text-[var(--ink)]">
               The people behind
               <span className="block italic text-gradient-ocean">Sunzee Holidays</span>
             </h2>
@@ -170,16 +170,16 @@ export function AboutPage() {
                 {/* Avatar */}
                 <div className="flex items-start gap-5 mb-6">
                   <div className="relative shrink-0">
-                    <div className="grid h-20 w-20 place-items-center rounded-full bg-gradient-to-br from-[var(--ocean-deep)] to-[var(--ocean-ink)] text-white font-display text-3xl font-semibold shadow-lg">
+                    <div className="grid h-20 w-20 place-items-center rounded-full bg-gradient-to-br from-[var(--ocean-deep)] to-[var(--ocean-ink)] text-white text-3xl font-semibold shadow-lg">
                       IA
                     </div>
                     <div className="absolute -inset-1.5 rounded-full border border-[var(--coral)]/40 -z-10" />
                   </div>
                   <div>
-                    <h3 className="font-display text-2xl md:text-3xl font-semibold text-[var(--ink)] leading-tight">
+                    <h3 className="text-2xl md:text-3xl font-semibold text-[var(--ink)] leading-tight">
                       Imran Ally Kanowah
                     </h3>
-                    <p className="text-sm text-[var(--coral-deep)] mt-1 tracking-wide italic font-display">
+                    <p className="text-sm text-[var(--coral-deep)] mt-1 tracking-wide italic">
                       Founder &amp; President
                     </p>
                   </div>
@@ -206,16 +206,16 @@ export function AboutPage() {
 
                 <div className="flex items-start gap-5 mb-6">
                   <div className="relative shrink-0">
-                    <div className="grid h-20 w-20 place-items-center rounded-full bg-gradient-to-br from-[var(--ocean)] to-[var(--ocean-deep)] text-white font-display text-3xl font-semibold shadow-lg">
+                    <div className="grid h-20 w-20 place-items-center rounded-full bg-gradient-to-br from-[var(--ocean)] to-[var(--ocean-deep)] text-white text-3xl font-semibold shadow-lg">
                       ZK
                     </div>
                     <div className="absolute -inset-1.5 rounded-full border border-[var(--coral)]/40 -z-10" />
                   </div>
                   <div>
-                    <h3 className="font-display text-2xl md:text-3xl font-semibold text-[var(--ink)] leading-tight">
+                    <h3 className="text-2xl md:text-3xl font-semibold text-[var(--ink)] leading-tight">
                       Zaynah Kanowah
                     </h3>
-                    <p className="text-sm text-[var(--coral-deep)] mt-1 tracking-wide italic font-display">
+                    <p className="text-sm text-[var(--coral-deep)] mt-1 tracking-wide italic">
                       Co-Founder &amp; CEO
                     </p>
                   </div>
@@ -248,13 +248,13 @@ export function AboutPage() {
                 <div className="absolute inset-10 rounded-full border border-[var(--ocean)]/20" />
 
                 <div className="relative text-center">
-                  <div className="font-display text-7xl md:text-8xl font-light text-[var(--coral-deep)] leading-none">
+                  <div className="text-7xl md:text-8xl font-light text-[var(--coral-deep)] leading-none">
                     Sun
                   </div>
-                  <div className="font-display text-2xl italic text-[var(--ink)]/40 my-3">
+                  <div className="text-2xl italic text-[var(--ink)]/40 my-3">
                     &amp;
                   </div>
-                  <div className="font-display text-7xl md:text-8xl font-light text-[var(--ocean-deep)] leading-none">
+                  <div className="text-7xl md:text-8xl font-light text-[var(--ocean-deep)] leading-none">
                     Zee
                   </div>
                   <div className="mt-5 text-xs tracking-[0.3em] uppercase text-[var(--ink)]/50">
@@ -271,7 +271,7 @@ export function AboutPage() {
             {/* Right: text */}
             <div>
               <SectionLabel>Etymology</SectionLabel>
-              <h2 className="font-display text-4xl md:text-5xl font-medium text-[var(--ink)] mt-5 leading-tight">
+              <h2 className="text-4xl md:text-5xl font-medium text-[var(--ink)] mt-5 leading-tight">
                 What is the meaning of
                 <span className="block italic text-gradient-ocean">Sunzee?</span>
               </h2>
@@ -304,7 +304,7 @@ export function AboutPage() {
                   <div className="grid h-12 w-12 place-items-center rounded-xl bg-gradient-to-br from-[var(--ocean-deep)] to-[var(--ocean-ink)] text-white shadow-md">
                     <Plane className="h-5 w-5" />
                   </div>
-                  <h3 className="font-display text-3xl font-semibold text-[var(--ink)]">
+                  <h3 className="text-3xl font-semibold text-[var(--ink)]">
                     What we offer?
                   </h3>
                 </div>
@@ -337,7 +337,7 @@ export function AboutPage() {
                   <div className="grid h-12 w-12 place-items-center rounded-xl bg-gradient-to-br from-[var(--ocean)] to-[var(--ocean-deep)] text-white shadow-md">
                     <Compass className="h-5 w-5" />
                   </div>
-                  <h3 className="font-display text-3xl font-semibold text-[var(--ink)]">
+                  <h3 className="text-3xl font-semibold text-[var(--ink)]">
                     What do we assist for?
                   </h3>
                 </div>
@@ -389,7 +389,7 @@ export function AboutPage() {
                   <div className="grid h-14 w-14 place-items-center rounded-2xl bg-gradient-to-br from-[var(--ocean-deep)] to-[var(--ocean-ink)] text-white shadow-md">
                     <Target className="h-6 w-6" />
                   </div>
-                  <h3 className="font-display text-3xl font-semibold text-[var(--ink)]">
+                  <h3 className="text-3xl font-semibold text-[var(--ink)]">
                     Our aim
                   </h3>
                 </div>
@@ -420,12 +420,12 @@ export function AboutPage() {
                     <div className="grid h-14 w-14 place-items-center rounded-2xl bg-white/20 text-white">
                       <Heart className="h-6 w-6" />
                     </div>
-                    <h3 className="font-display text-3xl font-semibold text-white">
+                    <h3 className="text-3xl font-semibold text-white">
                       Our Motto
                     </h3>
                   </div>
                   <div className="h-px w-16 bg-white/60 mb-6" />
-                  <p className="font-display text-2xl md:text-3xl italic font-light leading-tight text-white">
+                  <p className="text-2xl md:text-3xl italic font-light leading-tight text-white">
                     &ldquo;Our guests&apos; satisfaction is our achievement.&rdquo;
                   </p>
                 </div>
@@ -442,7 +442,7 @@ export function AboutPage() {
           <SectionLabel>
             <span className="text-[var(--gold)]">Begin your journey</span>
           </SectionLabel>
-          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium mt-5 leading-[1.05]">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium mt-5 leading-[1.05]">
             Partner with
             <span className="block italic text-[var(--gold)]">Sunzee Holidays</span>
           </h2>
@@ -484,7 +484,7 @@ function Stat({
   return (
     <div className="rounded-xl border border-[var(--ocean)]/15 bg-[var(--sand)]/50 px-2 py-3">
       <Icon className="h-4 w-4 text-[var(--coral)] mx-auto mb-1" />
-      <div className="font-display text-xl font-semibold text-[var(--ocean-deep)] leading-none">
+      <div className="text-xl font-semibold text-[var(--ocean-deep)] leading-none">
         {value}
       </div>
       <div className="text-[10px] text-[var(--ink)]/55 mt-1 tracking-wide">
