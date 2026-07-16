@@ -128,7 +128,7 @@ export function Header() {
               </a>
               <a
                 href="/#enquiry"
-                className="group hidden md:inline-flex items-center gap-2.5 rounded-full bg-gradient-to-r from-[var(--coral)] to-[var(--coral-deep)] px-6 md:px-7 py-3 md:py-3.5 text-sm font-semibold text-[var(--ink)] shadow-[0_12px_36px_-10px_rgba(180,140,40,0.7)] hover:shadow-[0_18px_46px_-10px_rgba(180,140,40,0.9)] hover:-translate-y-0.5 transition-all"
+                className="group hidden md:inline-flex items-center gap-2.5 rounded-full bg-gradient-to-r from-[var(--ocean)] to-[var(--ocean-deep)] px-6 md:px-7 py-3 md:py-3.5 text-sm font-semibold text-white shadow-[0_12px_36px_-10px_rgba(28,80,170,0.7)] hover:shadow-[0_18px_46px_-10px_rgba(28,80,170,0.9)] hover:-translate-y-0.5 transition-all"
               >
                 <span>Plan My Trip</span>
                 <span className="grid h-6 w-6 place-items-center rounded-full bg-white/20 group-hover:translate-x-1 transition-transform">
@@ -206,7 +206,7 @@ export function Header() {
               <a
                 href="/#enquiry"
                 onClick={() => setMobileOpen(false)}
-                className="group flex w-full items-center justify-center gap-2.5 rounded-full bg-gradient-to-r from-[var(--coral)] to-[var(--coral-deep)] px-6 py-3.5 text-sm font-semibold text-[var(--ink)] shadow-[0_12px_36px_-10px_rgba(180,140,40,0.7)] transition-all"
+                className="group flex w-full items-center justify-center gap-2.5 rounded-full bg-gradient-to-r from-[var(--ocean)] to-[var(--ocean-deep)] px-6 py-3.5 text-sm font-semibold text-white shadow-[0_12px_36px_-10px_rgba(28,80,170,0.7)] transition-all"
               >
                 <span>Plan My Trip</span>
                 <span className="grid h-6 w-6 place-items-center rounded-full bg-white/20 group-hover:translate-x-1 transition-transform">

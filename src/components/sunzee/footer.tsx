@@ -142,7 +142,7 @@ export function Footer() {
               />
               <button
                 type="submit"
-                className="rounded-xl bg-gradient-to-r from-[var(--coral)] to-[var(--coral-deep)] px-4 py-2 text-xs font-semibold text-[var(--ink)] hover:shadow-lg transition-all"
+                className="rounded-xl bg-gradient-to-r from-[var(--ocean)] to-[var(--ocean-deep)] px-4 py-2 text-xs font-semibold text-white hover:shadow-lg transition-all"
               >
                 Subscribe
               </button>

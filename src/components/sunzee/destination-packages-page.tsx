@@ -208,7 +208,7 @@ export function DestinationPackagesPage({ data }: { data: DestinationPackages })
                           </div>
                           <a
                             href={`mailto:${SITE.bookingEmail}?subject=Enquiry: ${pkg.name} (${data.title})`}
-                            className="group/btn inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[var(--coral)] to-[var(--coral-deep)] px-5 py-2.5 text-xs font-semibold text-[var(--ink)] shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all"
+                            className="group/btn inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[var(--ocean)] to-[var(--ocean-deep)] px-5 py-2.5 text-xs font-semibold text-white shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all"
                           >
                             Book Now
                             <span className="grid h-5 w-5 place-items-center rounded-full bg-white/20 group-hover/btn:translate-x-0.5 transition-transform">
@@ -253,7 +253,7 @@ export function DestinationPackagesPage({ data }: { data: DestinationPackages })
                 </div>
                 <a
                   href="/#enquiry"
-                  className="relative inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[var(--coral)] to-[var(--coral-deep)] px-6 py-3 text-sm font-semibold text-[var(--ink)] shadow-lg hover:-translate-y-0.5 transition-all"
+                  className="relative inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[var(--ocean)] to-[var(--ocean-deep)] px-6 py-3 text-sm font-semibold text-white shadow-lg hover:-translate-y-0.5 transition-all"
                 >
                   <Calendar className="h-4 w-4" />
                   Enquire Now
@@ -292,7 +292,7 @@ export function DestinationPackagesPage({ data }: { data: DestinationPackages })
                   <button
                     type="button"
                     onClick={() => setSearchQuery(searchQuery)}
-                    className="mt-3 w-full rounded-full bg-gradient-to-r from-[var(--coral)] to-[var(--coral-deep)] px-4 py-2 text-xs font-semibold text-[var(--ink)] hover:shadow-md transition-all"
+                    className="mt-3 w-full rounded-full bg-gradient-to-r from-[var(--ocean)] to-[var(--ocean-deep)] px-4 py-2 text-xs font-semibold text-white hover:shadow-md transition-all"
                   >
                     Search Now
                   </button>
@@ -381,7 +381,7 @@ export function DestinationPackagesPage({ data }: { data: DestinationPackages })
                     </p>
                     <a
                       href={`tel:${SITE.phoneRaw}`}
-                      className="block rounded-xl bg-gradient-to-r from-[var(--coral)] to-[var(--coral-deep)] text-[var(--ink)] px-4 py-2.5 text-center text-sm font-semibold hover:shadow-lg transition-all"
+                      className="block rounded-xl bg-gradient-to-r from-[var(--ocean)] to-[var(--ocean-deep)] text-white px-4 py-2.5 text-center text-sm font-semibold hover:shadow-lg transition-all"
                     >
                       {SITE.phone}
                     </a>
@@ -411,7 +411,7 @@ export function DestinationPackagesPage({ data }: { data: DestinationPackages })
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <a
               href={`mailto:${SITE.bookingEmail}?subject=Enquiry: ${data.title}`}
-              className="inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-[var(--coral)] to-[var(--coral-deep)] px-8 py-4 text-sm font-semibold text-[var(--ink)] shadow-[0_10px_30px_-8px_rgba(180,140,40,0.7)] hover:-translate-y-0.5 transition-all"
+              className="inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-[var(--ocean)] to-[var(--ocean-deep)] px-8 py-4 text-sm font-semibold text-white shadow-[0_10px_30px_-8px_rgba(28,80,170,0.7)] hover:-translate-y-0.5 transition-all"
             >
               <Calendar className="h-4 w-4" />
               BOOK NOW

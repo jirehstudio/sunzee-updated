@@ -180,7 +180,7 @@ export function Enquiry() {
                     </p>
                     <button
                       type="submit"
-                      className="group inline-flex items-center gap-2.5 rounded-full bg-gradient-to-r from-[var(--coral)] to-[var(--coral-deep)] px-7 py-3.5 text-sm font-semibold text-[var(--ink)] shadow-[0_10px_30px_-8px_rgba(180,140,40,0.7)] hover:shadow-[0_14px_40px_-8px_rgba(180,140,40,0.9)] hover:-translate-y-0.5 transition-all"
+                      className="group inline-flex items-center gap-2.5 rounded-full bg-gradient-to-r from-[var(--ocean)] to-[var(--ocean-deep)] px-7 py-3.5 text-sm font-semibold text-white shadow-[0_10px_30px_-8px_rgba(28,80,170,0.7)] hover:shadow-[0_14px_40px_-8px_rgba(28,80,170,0.9)] hover:-translate-y-0.5 transition-all"
                     >
                       <Send className="h-4 w-4" />
                       Submit Enquiry
