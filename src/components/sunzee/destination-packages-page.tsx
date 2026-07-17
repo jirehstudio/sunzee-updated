@@ -307,11 +307,11 @@ export function DestinationPackagesPage({ data }: { data: DestinationPackages })
                     step={50}
                     value={priceMax}
                     onChange={(e) => setPriceMax(Number(e.target.value))}
-                    className="w-full accent-[var(--coral-deep)]"
+                    className="w-full accent-[var(--ocean-deep)]"
                   />
                   <div className="flex items-center justify-between text-xs text-[var(--ink)]/60 mt-2">
                     <span>$500</span>
-                    <span className="font-semibold text-[var(--coral-deep)]">Up to ${priceMax}</span>
+                    <span className="font-semibold text-[var(--ocean-deep)]">Up to ${priceMax}</span>
                   </div>
                 </FilterCard>
 
@@ -462,11 +462,11 @@ export function DestinationPackagesPage({ data }: { data: DestinationPackages })
                   step={50}
                   value={priceMax}
                   onChange={(e) => setPriceMax(Number(e.target.value))}
-                  className="w-full accent-[var(--coral-deep)]"
+                  className="w-full accent-[var(--ocean-deep)]"
                 />
                 <div className="flex justify-between text-xs text-[var(--ink)]/60 mt-1">
                   <span>$500</span>
-                  <span className="font-semibold text-[var(--coral-deep)]">Up to ${priceMax}</span>
+                  <span className="font-semibold text-[var(--ocean-deep)]">Up to ${priceMax}</span>
                 </div>
               </div>
               <div>
