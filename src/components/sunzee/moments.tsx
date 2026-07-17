@@ -12,7 +12,7 @@ export function Moments() {
         <Reveal className="text-center max-w-3xl mx-auto mb-14">
           <SectionLabel>Travel moments</SectionLabel>
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-[var(--ink)] mt-5 leading-[1.05]">
-            Postcards from <span className="italic text-gradient-ocean">our travellers</span>
+            Postcards from <span className="italic text-gradient-ocean">our </span><span className="italic text-gradient-ocean">travellers</span>
           </h2>
           <Ornament className="mt-6" />
           <p className="mt-6 text-[var(--ink)]/65 text-base md:text-lg leading-relaxed font-light">
