@@ -54,7 +54,7 @@
 }
 
 :root {
-  color-scheme: light;
+  color-scheme: only light;
   --radius: 0.75rem;
 
   /* ============================================================
