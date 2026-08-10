@@ -24,14 +24,13 @@ export const NAV = [
   { label: "Home", href: "/" },
   {
     label: "Tour Packages",
-    href: "/egypt-tour-packages",
+    href: "/mauritius-tour-packages",
     children: [
-      { label: "Egypt Tour Packages", href: "/egypt-tour-packages" },
-      { label: "Kenya Tour Packages", href: "/kenya-tour-packages" },
-      { label: "Zanzibar Tour Packages", href: "/zanzibar-tour-packages" },
-      { label: "Mauritius Tour Packages", href: "/mauritius-tour-packages" },
-      { label: "Madagascar Tour Packages", href: "/madagascar-tour-packages" },
-      { label: "Reunion Tour Packages", href: "/reunion-tour-packages" },
+      { label: "Mauritius Packages", href: "/mauritius-tour-packages" },
+      { label: "Seychelles Packages", href: "/seychelles-tour-packages" },
+      { label: "Maldives Packages", href: "/maldives-tour-packages" },
+      { label: "Zanzibar Packages", href: "/zanzibar-tour-packages" },
+      { label: "Reunion Packages", href: "/reunion-tour-packages" },
     ],
   },
   { label: "About", href: "/about" },
@@ -40,31 +39,43 @@ export const NAV = [
 
 export const DESTINATIONS = [
   {
-    name: "Egypt",
-    caption: "Plan Your Tour to Egypt With Us.",
-    href: "/egypt-tour-packages",
-    image: "https://sfile.chatglm.cn/images-ppt/cb282bb90c0c.jpg",
+    name: "Mauritius",
+    caption: "Plan Your Tour to Mauritius With Us.",
+    href: "/mauritius-tour-packages",
+    image: "https://sfile.chatglm.cn/images-ppt/208fd6674588.jpg",
     gallery: [
-      "https://sfile.chatglm.cn/images-ppt/396c5ddf9e98.jpeg",
-      "https://sfile.chatglm.cn/images-ppt/7d64936af8a9.jpg",
-      "https://sfile.chatglm.cn/images-ppt/2225f176213d.jpg",
+      "https://sfile.chatglm.cn/images-ppt/f2a6013672ab.jpg",
+      "https://sfile.chatglm.cn/images-ppt/8d87cfa820aa.jpg",
     ],
     blurb:
-      "Cruise the Nile, stand before the Pyramids of Giza, and lose yourself in the bazaars of Cairo.",
-    region: "North Africa",
+      "Coral lagoons, lush interior peaks, and a melting pot of Creole, French and Indian culture.",
+    region: "Indian Ocean",
   },
   {
-    name: "Kenya",
-    caption: "Plan Your Tour to Kenya With Us.",
-    href: "/kenya-tour-packages",
-    image: "https://sfile.chatglm.cn/images-ppt/640772c2943f.jpg",
+    name: "Seychelles",
+    caption: "Plan Your Tour to Seychelles With Us.",
+    href: "/seychelles-tour-packages",
+    image: "/sunzee/seychelles.png",
     gallery: [
-      "https://sfile.chatglm.cn/images-ppt/208fd6674588.jpg",
-      "https://sfile.chatglm.cn/images-ppt/cfc58aa1c5dd.jpg",
+      "/sunzee/seychelles.png",
+      "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80",
     ],
     blurb:
-      "Witness the great migration across the Maasai Mara and track the Big Five on a flagship safari.",
-    region: "East Africa",
+      "Iconic granite boulders, pristine beaches, Coco de Mer palms, and serene turquoise waters.",
+    region: "Indian Ocean",
+  },
+  {
+    name: "Maldives",
+    caption: "Plan Your Tour to Maldives With Us.",
+    href: "/maldives-tour-packages",
+    image: "/sunzee/maldives.png",
+    gallery: [
+      "/sunzee/maldives.png",
+      "https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&w=800&q=80",
+    ],
+    blurb:
+      "The ultimate overwater paradise. Unwind in crystal-clear lagoons and discover world-class coral reefs.",
+    region: "Indian Ocean",
   },
   {
     name: "Zanzibar",
@@ -80,41 +91,13 @@ export const DESTINATIONS = [
     region: "Indian Ocean",
   },
   {
-    name: "Mauritius",
-    caption: "Plan Your Tour to Mauritius With Us.",
-    href: "/mauritius-tour-packages",
-    image: "https://sfile.chatglm.cn/images-ppt/208fd6674588.jpg",
-    gallery: [
-      "https://sfile.chatglm.cn/images-ppt/f2a6013672ab.jpg",
-      "https://sfile.chatglm.cn/images-ppt/8d87cfa820aa.jpg",
-    ],
-    blurb:
-      "Coral lagoons, lush interior peaks, and a melting pot of Creole, French and Indian culture.",
-    region: "Indian Ocean",
-  },
-  {
-    name: "Madagascar",
-    caption: "Plan Your Tour to Madagascar With Us.",
-    href: "/madagascar-tour-packages",
-    image: "https://sfile.chatglm.cn/images-ppt/cfc58aa1c5dd.jpg",
-    gallery: [
-      "https://sfile.chatglm.cn/images-ppt/d9feda4fcf3a.jpg",
-      "https://sfile.chatglm.cn/images-ppt/be187597cf67.jpg",
-      "https://sfile.chatglm.cn/images-ppt/559c45d768e6.jpg",
-    ],
-    blurb:
-      "Walk the Avenue of the Baobabs, meet lemurs in wild rainforests, and explore otherworldly rock.",
-    region: "Indian Ocean",
-  },
-  {
-    name: "Reunion",
-    caption: "Plan Your Tour to Reunion With Us.",
+    name: "Reunion Island",
+    caption: "Plan Your Tour to Reunion Island With Us.",
     href: "/reunion-tour-packages",
     image: "https://sfile.chatglm.cn/images-ppt/8d87cfa820aa.jpg",
     gallery: [
       "https://sfile.chatglm.cn/images-ppt/3eadce2d34cb.jpg",
       "https://sfile.chatglm.cn/images-ppt/dd058a9c939e.jpg",
-      "https://sfile.chatglm.cn/images-ppt/7fe104385422.jpg",
     ],
     blurb:
       "Hike a still-active volcano, circle the cirques of Mafate and Cilaos, and surf world-class breaks.",
@@ -123,11 +106,10 @@ export const DESTINATIONS = [
 ] as const;
 
 export const TOUR_PACKAGES = [
-  { label: "Egypt Tour Packages", href: "/egypt-tour-packages" },
-  { label: "Kenya Tour Packages", href: "/kenya-tour-packages" },
-  { label: "Zanzibar Tour Packages", href: "/zanzibar-tour-packages" },
   { label: "Mauritius Tour Packages", href: "/mauritius-tour-packages" },
-  { label: "Madagascar Tour Packages", href: "/madagascar-tour-packages" },
+  { label: "Seychelles Tour Packages", href: "/seychelles-tour-packages" },
+  { label: "Maldives Tour Packages", href: "/maldives-tour-packages" },
+  { label: "Zanzibar Tour Packages", href: "/zanzibar-tour-packages" },
   { label: "Reunion Tour Packages", href: "/reunion-tour-packages" },
 ] as const;
 
@@ -138,18 +120,16 @@ export const IMPORTANT_LINKS = [
   { label: "Privacy Policy", href: "#" },
 ] as const;
 
-// Expanded hero carousel — 5 bright, tourism-vibe slides
 export const HERO_SLIDES = [
-  "https://sfile.chatglm.cn/images-ppt/208fd6674588.jpg", // Mauritius lagoon
-  "https://sfile.chatglm.cn/images-ppt/cb282bb90c0c.jpg", // Egypt pyramids
-  "https://sfile.chatglm.cn/images-ppt/8d87cfa820aa.jpg", // Reunion volcano
-  "https://sfile.chatglm.cn/images-ppt/cfc58aa1c5dd.jpg", // Madagascar baobabs
-  "https://sfile.chatglm.cn/images-ppt/640772c2943f.jpg", // Kenya safari
+  "https://sfile.chatglm.cn/images-ppt/208fd6674588.jpg",
+  "/sunzee/seychelles.png",
+  "/sunzee/maldives.png",
+  "https://sfile.chatglm.cn/images-ppt/8d87cfa820aa.jpg",
+  "https://sfile.chatglm.cn/images-ppt/f2a6013672ab.jpg",
 ] as const;
 
 export const CTA_IMAGE = "https://sfile.chatglm.cn/images-ppt/f2a6013672ab.jpg" as const;
 
-// Featured experiences (NEW section)
 export const EXPERIENCES = [
   {
     title: "Beach & Island Escapes",
@@ -189,19 +169,14 @@ export const EXPERIENCES = [
   },
 ] as const;
 
-// Travel moments gallery (NEW section) — Instagram-style grid
 export const MOMENTS = [
-  { image: "https://sfile.chatglm.cn/images-ppt/396c5ddf9e98.jpeg", caption: "Nile cruise" },
-  { image: "https://sfile.chatglm.cn/images-ppt/7d64936af8a9.jpg", caption: "Pyramids of Giza" },
-  { image: "https://sfile.chatglm.cn/images-ppt/2225f176213d.jpg", caption: "Luxor temples" },
-  { image: "https://sfile.chatglm.cn/images-ppt/d9feda4fcf3a.jpg", caption: "Avenue of Baobabs" },
-  { image: "https://sfile.chatglm.cn/images-ppt/be187597cf67.jpg", caption: "Lemur tracking" },
-  { image: "https://sfile.chatglm.cn/images-ppt/559c45d768e6.jpg", caption: "Nosy Be beaches" },
-  { image: "https://sfile.chatglm.cn/images-ppt/3eadce2d34cb.jpg", caption: "Mafate cirque" },
-  { image: "https://sfile.chatglm.cn/images-ppt/dd058a9c939e.jpg", caption: "Piton de la Fournaise" },
+  { image: "https://sfile.chatglm.cn/images-ppt/208fd6674588.jpg", caption: "Mauritius lagoon" },
+  { image: "/sunzee/seychelles.png", caption: "Seychelles granites" },
+  { image: "/sunzee/maldives.png", caption: "Maldives overwater" },
+  { image: "https://sfile.chatglm.cn/images-ppt/f2a6013672ab.jpg", caption: "Zanzibar dhow" },
+  { image: "https://sfile.chatglm.cn/images-ppt/8d87cfa820aa.jpg", caption: "Reunion volcano" },
 ] as const;
 
-// Why choose us (NEW section)
 export const WHY_CHOOSE_US = [
   {
     title: "30 Years of Expertise",
@@ -229,7 +204,6 @@ export const WHY_CHOOSE_US = [
   },
 ] as const;
 
-// Testimonials (NEW section)
 export const TESTIMONIALS = [
   {
     quote:
@@ -247,9 +221,9 @@ export const TESTIMONIALS = [
   },
   {
     quote:
-      "The Madagascar wildlife safari exceeded every expectation. Our guide knew exactly where to find the indri lemurs at dawn.",
+      "The Seychelles getaway exceeded every expectation. The island transfers and private excursions were flawless.",
     name: "James Whitfield",
-    detail: "Wildlife Safari, Madagascar",
+    detail: "Luxury Vacation, Seychelles",
     avatar: "JW",
   },
 ] as const;

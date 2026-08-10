@@ -4,9 +4,9 @@ import { DestinationPackagesPage } from "@/components/sunzee/destination-package
 import { ZANZIBAR_PACKAGES } from "@/components/sunzee/destination-data";
 
 export const metadata: Metadata = {
-  title: "Zanzibar Tour Packages - Sunzee Holidays",
+  title: "Zanzibar Packages - Sunzee Holidays",
   description:
-    "Discover Zanzibar tour packages from Sunzee Holidays. Stone Town heritage, Nungwi beaches, spice plantations, Mnemba Atoll diving and Pemba Island expeditions.",
+    "Explore Zanzibar with Sunzee Holidays. Beautiful Swahili history in Stone Town, aromatic spice plantations, and pristine beaches of Nungwi & Kendwa.",
 };
 
 export default function ZanzibarTourPackagesPage() {
