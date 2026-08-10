@@ -241,17 +241,17 @@ export function Footer() {
 
       {/* ============ COPYRIGHT BAR ============ */}
       <div className="relative border-t border-white/10 bg-[var(--ink)]/45">
-        <div className="container mx-auto max-w-7xl px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-white/70">
+        <div className="container mx-auto max-w-7xl px-6 py-5 md:py-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-white/70">
           <p className="flex items-center gap-2">
             <span className="h-1 w-1 rounded-full bg-[var(--gold)]" />
             {SITE.copyright}
           </p>
 
           {/* Powered By Jireh */}
-          <div className="flex items-center gap-2.5">
-            <span className="text-sm font-medium text-white/80">Powered By</span>
+          <div className="flex items-center gap-3">
+            <span className="text-lg md:text-xl font-semibold text-white/95">Powered By</span>
             <a
-              href="https://jirehstudio.com"
+              href="https://jireh.studio"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center transition-transform hover:scale-105"
@@ -259,7 +259,7 @@ export function Footer() {
               <img
                 src="/sunzee/jireh-logo.jpg"
                 alt="Jireh Studio"
-                className="h-10 md:h-12 w-auto object-contain rounded-xl shadow-md border border-white/10"
+                className="h-16 md:h-20 w-auto object-contain rounded-xl shadow-lg border border-white/15"
               />
             </a>
           </div>
