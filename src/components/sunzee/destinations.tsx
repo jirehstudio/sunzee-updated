@@ -107,28 +107,39 @@ export function Destinations() {
                     </div>
                   </div>
 
-                  {/* Thumbnail strip — fixed height, flush at bottom of card, no empty space under it */}
+                  {/* Thumbnail strip — clean modern design, high visibility, spacious layout */}
                   {d.gallery && d.gallery.length > 0 && (
-                    <div className="flex items-stretch gap-1.5 px-2.5 py-2 bg-white h-14 shrink-0">
-                      <div className="text-[8px] font-semibold tracking-[0.2em] uppercase text-[var(--ink)]/50 mr-0.5 shrink-0 self-center">
-                        More
-                      </div>
-                      {d.gallery.slice(0, 3).map((g, gi) => (
-                        <div
-                          key={gi}
-                          className="relative flex-1 h-full rounded-md overflow-hidden bg-[var(--sand)]"
-                        >
-                          <img
-                            src={g}
-                            alt={`${d.name} ${gi + 1}`}
-                            loading="lazy"
-                            className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
-                          />
+                    <div className="p-3.5 sm:p-4 bg-white border-t border-slate-100 shrink-0">
+                      {/* Label & CTA Header */}
+                      <div className="flex items-center justify-between gap-2 mb-2.5">
+                        <span className="text-[11px] font-bold tracking-[0.18em] uppercase text-[var(--ink)]/60 flex items-center gap-1.5">
+                          <span className="h-1.5 w-1.5 rounded-full bg-[var(--ocean)]" />
+                          MORE PHOTOS
+                        </span>
+                        <div className="inline-flex items-center gap-1 rounded-full bg-[var(--ocean)]/10 px-3 py-1 text-[10px] font-bold tracking-wider uppercase text-[var(--ocean-deep)] group-hover:bg-[var(--ocean)] group-hover:text-white transition-all">
+                          View
+                          <ArrowUpRight className="h-3 w-3" />
                         </div>
-                      ))}
-                      <div className="ml-0.5 inline-flex items-center gap-1 rounded-full bg-[var(--ocean)]/10 px-2.5 py-1.5 text-[9px] font-semibold tracking-[0.2em] uppercase text-[var(--ocean-deep)] group-hover:bg-[var(--ocean)] group-hover:text-white transition-colors shrink-0 self-center">
-                        View
-                        <ArrowUpRight className="h-2.5 w-2.5" />
+                      </div>
+
+                      {/* 3-Column Large Thumbnail Grid */}
+                      <div className="grid grid-cols-3 gap-2">
+                        {d.gallery.slice(0, 3).map((g, gi) => (
+                          <div
+                            key={gi}
+                            className="relative h-16 sm:h-20 w-full rounded-xl overflow-hidden bg-slate-100 border border-slate-200/80 shadow-xs transition-all duration-300 hover:shadow-md hover:border-[var(--ocean)]/40"
+                          >
+                            <img
+                              src={g}
+                              alt={`${d.name} highlight ${gi + 1}`}
+                              loading="lazy"
+                              className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                              onError={(e) => {
+                                e.currentTarget.style.display = "none";
+                              }}
+                            />
+                          </div>
+                        ))}
                       </div>
                     </div>
                   )}

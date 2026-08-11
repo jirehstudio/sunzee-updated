@@ -42,10 +42,11 @@ export const DESTINATIONS = [
     name: "Mauritius",
     caption: "Plan Your Tour to Mauritius With Us.",
     href: "/mauritius-tour-packages",
-    image: "https://sfile.chatglm.cn/images-ppt/208fd6674588.jpg",
+    image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=80",
     gallery: [
-      "https://sfile.chatglm.cn/images-ppt/f2a6013672ab.jpg",
-      "https://sfile.chatglm.cn/images-ppt/8d87cfa820aa.jpg",
+      "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1589553460732-57ef51160601?auto=format&fit=crop&w=600&q=80",
     ],
     blurb:
       "Coral lagoons, lush interior peaks, and a melting pot of Creole, French and Indian culture.",
@@ -57,8 +58,9 @@ export const DESTINATIONS = [
     href: "/seychelles-tour-packages",
     image: "/sunzee/seychelles.png",
     gallery: [
-      "/sunzee/seychelles.png",
-      "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=600&q=80",
     ],
     blurb:
       "Iconic granite boulders, pristine beaches, Coco de Mer palms, and serene turquoise waters.",
@@ -71,7 +73,8 @@ export const DESTINATIONS = [
     image: "/sunzee/maldives.png",
     gallery: [
       "/sunzee/maldives.png",
-      "https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&w=600&q=80",
     ],
     blurb:
       "The ultimate overwater paradise. Unwind in crystal-clear lagoons and discover world-class coral reefs.",
@@ -81,10 +84,11 @@ export const DESTINATIONS = [
     name: "Zanzibar",
     caption: "Plan Your Tour to Zanzibar With Us.",
     href: "/zanzibar-tour-packages",
-    image: "https://sfile.chatglm.cn/images-ppt/f2a6013672ab.jpg",
+    image: "https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?auto=format&fit=crop&w=1200&q=80",
     gallery: [
-      "https://sfile.chatglm.cn/images-ppt/208fd6674588.jpg",
-      "https://sfile.chatglm.cn/images-ppt/8d87cfa820aa.jpg",
+      "https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80",
     ],
     blurb:
       "Spice-trade history, Stone Town lanes, and powdery white beaches lapped by turquoise tides.",
@@ -94,10 +98,11 @@ export const DESTINATIONS = [
     name: "Reunion Island",
     caption: "Plan Your Tour to Reunion Island With Us.",
     href: "/reunion-tour-packages",
-    image: "https://sfile.chatglm.cn/images-ppt/8d87cfa820aa.jpg",
+    image: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1200&q=80",
     gallery: [
-      "https://sfile.chatglm.cn/images-ppt/3eadce2d34cb.jpg",
-      "https://sfile.chatglm.cn/images-ppt/dd058a9c939e.jpg",
+      "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=600&q=80",
     ],
     blurb:
       "Hike a still-active volcano, circle the cirques of Mafate and Cilaos, and surf world-class breaks.",
