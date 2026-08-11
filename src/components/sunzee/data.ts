@@ -46,7 +46,7 @@ export const DESTINATIONS = [
     gallery: [
       "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=600&q=80",
       "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1589553460732-57ef51160601?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1540206395-68808572332f?auto=format&fit=crop&w=600&q=80",
     ],
     blurb:
       "Coral lagoons, lush interior peaks, and a melting pot of Creole, French and Indian culture.",

@@ -135,7 +135,8 @@ export function Destinations() {
                               loading="lazy"
                               className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                               onError={(e) => {
-                                e.currentTarget.style.display = "none";
+                                const parent = e.currentTarget.parentElement;
+                                if (parent) parent.style.display = "none";
                               }}
                             />
                           </div>
