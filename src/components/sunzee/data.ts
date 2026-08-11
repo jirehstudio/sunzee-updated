@@ -126,60 +126,60 @@ export const IMPORTANT_LINKS = [
 ] as const;
 
 export const HERO_SLIDES = [
-  "https://sfile.chatglm.cn/images-ppt/208fd6674588.jpg",
+  "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1600&q=80",
   "/sunzee/seychelles.png",
   "/sunzee/maldives.png",
-  "https://sfile.chatglm.cn/images-ppt/8d87cfa820aa.jpg",
-  "https://sfile.chatglm.cn/images-ppt/f2a6013672ab.jpg",
+  "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1600&q=80",
+  "https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?auto=format&fit=crop&w=1600&q=80",
 ] as const;
 
-export const CTA_IMAGE = "https://sfile.chatglm.cn/images-ppt/f2a6013672ab.jpg" as const;
+export const CTA_IMAGE = "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80" as const;
 
 export const EXPERIENCES = [
   {
     title: "Beach & Island Escapes",
     blurb: "Powdery sands, palm-fringed lagoons and overwater sunsets.",
-    image: "https://sfile.chatglm.cn/images-ppt/208fd6674588.jpg",
+    image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
     icon: "palmtree",
   },
   {
     title: "Safari & Wildlife",
     blurb: "Track the Big Five, witness the migration and sleep in the bush.",
-    image: "https://sfile.chatglm.cn/images-ppt/640772c2943f.jpg",
+    image: "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=800&q=80",
     icon: "compass",
   },
   {
     title: "Cultural & Heritage",
     blurb: "Ancient temples, spice-trade lanes and living tribal traditions.",
-    image: "https://sfile.chatglm.cn/images-ppt/cb282bb90c0c.jpg",
+    image: "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=800&q=80",
     icon: "landmark",
   },
   {
     title: "Adventure & Trek",
     blurb: "Volcano hikes, canyon treks and rainforest expeditions.",
-    image: "https://sfile.chatglm.cn/images-ppt/8d87cfa820aa.jpg",
+    image: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=80",
     icon: "mountain",
   },
   {
     title: "Honeymoon & Romance",
     blurb: "Private dinners, sunset cruises and barefoot luxury retreats.",
-    image: "https://sfile.chatglm.cn/images-ppt/f2a6013672ab.jpg",
+    image: "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=800&q=80",
     icon: "heart",
   },
   {
     title: "Diving & Marine",
     blurb: "Coral gardens, sea turtles, whales and reef sharks.",
-    image: "https://sfile.chatglm.cn/images-ppt/559c45d768e6.jpg",
+    image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
     icon: "wave",
   },
 ] as const;
 
 export const MOMENTS = [
-  { image: "https://sfile.chatglm.cn/images-ppt/208fd6674588.jpg", caption: "Mauritius lagoon" },
+  { image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=600&q=80", caption: "Mauritius lagoon" },
   { image: "/sunzee/seychelles.png", caption: "Seychelles granites" },
   { image: "/sunzee/maldives.png", caption: "Maldives overwater" },
-  { image: "https://sfile.chatglm.cn/images-ppt/f2a6013672ab.jpg", caption: "Zanzibar dhow" },
-  { image: "https://sfile.chatglm.cn/images-ppt/8d87cfa820aa.jpg", caption: "Reunion volcano" },
+  { image: "https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?auto=format&fit=crop&w=600&q=80", caption: "Zanzibar dhow" },
+  { image: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=600&q=80", caption: "Reunion volcano" },
 ] as const;
 
 export const WHY_CHOOSE_US = [

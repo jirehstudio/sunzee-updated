@@ -33,7 +33,7 @@ export function About() {
               {/* Main image with rounded frame */}
               <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://sfile.chatglm.cn/images-ppt/208fd6674588.jpg"
+                  src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80"
                   alt="Tropical island getaway"
                   loading="lazy"
                   className="h-full w-full object-cover"
@@ -44,7 +44,7 @@ export function About() {
               {/* Small overlapping image 1 — top right */}
               <div className="hidden md:block absolute -top-8 -right-6 w-44 h-56 rounded-2xl overflow-hidden border-4 border-white shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500">
                 <img
-                  src="https://sfile.chatglm.cn/images-ppt/640772c2943f.jpg"
+                  src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=600&q=80"
                   alt="Safari experience"
                   loading="lazy"
                   className="h-full w-full object-cover"
@@ -54,7 +54,7 @@ export function About() {
               {/* Small overlapping image 2 — bottom left */}
               <div className="hidden md:block absolute -bottom-10 -left-8 w-48 h-48 rounded-2xl overflow-hidden border-4 border-white shadow-2xl -rotate-3 hover:rotate-0 transition-transform duration-500">
                 <img
-                  src="https://sfile.chatglm.cn/images-ppt/f2a6013672ab.jpg"
+                  src="https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?auto=format&fit=crop&w=600&q=80"
                   alt="Zanzibar beach"
                   loading="lazy"
                   className="h-full w-full object-cover"

@@ -46,7 +46,7 @@ export function Enquiry() {
               {/* Background image overlay */}
               <div className="absolute inset-0 opacity-20">
                 <img
-                  src="https://sfile.chatglm.cn/images-ppt/aefc9acf92b7.png"
+                  src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
                   alt=""
                   loading="lazy"
                   className="h-full w-full object-cover"

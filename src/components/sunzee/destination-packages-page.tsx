@@ -136,7 +136,7 @@ export function DestinationPackagesPage({ data }: { data: DestinationPackages })
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10">
 
             {/* LEFT COLUMN: Main Information & Packages */}
-            <div className="lg:col-span-8 space-y-12 order-2 lg:order-1">
+            <div className="lg:col-span-8 space-y-12 order-1 lg:order-1">
 
               {/* Destination Overview */}
               {details && (
@@ -526,7 +526,7 @@ export function DestinationPackagesPage({ data }: { data: DestinationPackages })
             </div>
 
             {/* RIGHT COLUMN: Sidebar Quick Facts, Accommodations & Contact */}
-            <aside className="lg:col-span-4 order-1 lg:order-2 space-y-5">
+            <aside className="lg:col-span-4 order-2 lg:order-2 space-y-5">
               <div className="lg:sticky lg:top-24 space-y-5">
 
                 {/* Quick Facts Card */}
