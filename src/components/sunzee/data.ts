@@ -126,11 +126,11 @@ export const IMPORTANT_LINKS = [
 ] as const;
 
 export const HERO_SLIDES = [
-  "https://sfile.chatglm.cn/images-ppt/208fd6674588.jpg",
+  "/sunzee/mauritius_hotel.jpg",
   "/sunzee/seychelles.png",
   "/sunzee/maldives.png",
-  "https://sfile.chatglm.cn/images-ppt/8d87cfa820aa.jpg",
-  "https://sfile.chatglm.cn/images-ppt/f2a6013672ab.jpg",
+  "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1600&q=80",
+  "https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?auto=format&fit=crop&w=1600&q=80",
 ] as const;
 
 export const CTA_IMAGE = "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80" as const;

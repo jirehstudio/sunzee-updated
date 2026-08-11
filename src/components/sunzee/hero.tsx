@@ -9,11 +9,11 @@ const SLIDE_DURATION = 6000;
 // Per-slide: just the place name + a tiny evocative caption.
 // The big headline stays the same — what changes is *where* you are.
 const SLIDE_CAPTIONS = [
-  { place: "Mauritius", caption: "Lagoon days, island nights" },
-  { place: "Egypt", caption: "Walk with pharaohs" },
-  { place: "Reunion", caption: "Chase the volcano" },
-  { place: "Madagascar", caption: "Meet the baobabs" },
-  { place: "Kenya", caption: "The wild awaits" },
+  "Lagoon days, island nights",
+  "Iconic granite boulders & pristine beaches",
+  "Overwater luxury & crystal lagoons",
+  "Spice trade history & white-sand tides",
+  "Volcanic peaks & rainforest cirques",
 ];
 
 export function Hero() {
@@ -77,17 +77,6 @@ export function Hero() {
         {/* Main content — bottom-left, minimal, image-forward */}
         <div className="absolute inset-x-0 bottom-0 z-10">
           <div className="container mx-auto max-w-7xl px-6 md:px-10 pb-28 md:pb-32">
-            {/* Per-slide place name */}
-            <div
-              key={`place-${index}`}
-              className="inline-flex items-center gap-2 mb-4 md:mb-5 animate-[fadeInUp_700ms_ease-out]"
-            >
-              <MapPin className="h-4 w-4 text-[var(--gold)]" />
-              <span className="text-xs md:text-sm font-semibold tracking-[0.35em] uppercase text-[var(--gold)]">
-                {cap.place}
-              </span>
-            </div>
-
             {/* Unified headline — doesn't change per slide */}
             <h1 className="text-[2.75rem] sm:text-6xl md:text-7xl lg:text-[8rem] font-medium leading-[0.92] text-white drop-shadow-xl tracking-tight">
               Find your
@@ -99,7 +88,7 @@ export function Hero() {
               key={`caption-${index}`}
               className="mt-4 md:mt-5 italic text-white/90 text-lg md:text-2xl font-light animate-[fadeInUp_700ms_ease-out_150ms_both]"
             >
-              {cap.caption}
+              {cap}
             </p>
 
             {/* Two simple CTAs — exploration first, booking second */}
