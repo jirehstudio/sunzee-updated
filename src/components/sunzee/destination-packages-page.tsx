@@ -35,6 +35,15 @@ export function DestinationPackagesPage({ data }: { data: DestinationPackages })
   const [priceMax, setPriceMax] = useState(2500);
   const [selectedFacilities, setSelectedFacilities] = useState<string[]>([]);
   const [searchQuery, setSearchQuery] = useState("");
+  const [activeItineraryIndex, setActiveItineraryIndex] = useState(0);
+
+  const availableItineraries = data.itineraries && data.itineraries.length > 0
+    ? data.itineraries
+    : data.itinerary && data.itinerary.length > 0
+    ? [{ title: `${data.name} Signature Itinerary`, duration: data.itineraryDuration || "", days: data.itinerary }]
+    : [];
+
+  const activeItinerary = availableItineraries[activeItineraryIndex] || availableItineraries[0];
 
   const toggleFacility = (f: string) =>
     setSelectedFacilities((prev) =>
@@ -411,46 +420,71 @@ export function DestinationPackagesPage({ data }: { data: DestinationPackages })
                   ) : null}
 
                   {/* Day-by-Day Signature Itinerary Timeline */}
-                  {data.itinerary && data.itinerary.length > 0 && (
-                    <div className="mt-8 space-y-8 relative before:absolute before:inset-y-0 before:left-[19px] before:w-0.5 before:bg-[var(--ocean)]/20 pb-4">
-                      <div className="bg-gradient-to-r from-[var(--ocean)]/10 to-transparent border border-[var(--ocean)]/20 rounded-2xl p-5 mb-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-                        <div>
-                          <h4 className="text-lg font-semibold text-[var(--ocean-deep)]">
-                            Signature Route
-                          </h4>
-                          <p className="text-xs text-[var(--ink)]/50 uppercase tracking-wider mt-0.5">
-                            {data.name} Islands Tour Itinerary
-                          </p>
+                  {availableItineraries.length > 0 && activeItinerary && (
+                    <div className="mt-8 space-y-6">
+                      {/* Tab Selector if multiple itineraries */}
+                      {availableItineraries.length > 1 && (
+                        <div className="flex flex-wrap items-center gap-2 p-2 bg-white rounded-2xl border border-[var(--ocean)]/15 shadow-sm">
+                          <span className="text-xs font-semibold text-[var(--ink)]/50 uppercase tracking-wider px-3 hidden sm:inline">
+                            Select Option:
+                          </span>
+                          {availableItineraries.map((it, idx) => (
+                            <button
+                              key={idx}
+                              type="button"
+                              onClick={() => setActiveItineraryIndex(idx)}
+                              className={`px-4 sm:px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-300 ${
+                                activeItineraryIndex === idx
+                                  ? "bg-gradient-to-r from-[var(--ocean)] to-[var(--ocean-deep)] text-white shadow-md"
+                                  : "bg-gray-50 text-[var(--ink)]/75 border border-transparent hover:border-[var(--ocean)]/20 hover:bg-white"
+                              }`}
+                            >
+                              {it.duration}
+                            </button>
+                          ))}
                         </div>
-                        <div className="bg-[var(--ocean-deep)] text-white px-4 py-2 rounded-xl text-xs md:text-sm font-semibold tracking-wide">
-                          {data.itineraryDuration}
-                        </div>
-                      </div>
+                      )}
 
-                      <RevealStagger className="space-y-6">
-                        {data.itinerary.map((item) => (
-                          <RevealItem key={item.day}>
-                            <div className="relative pl-12 group">
-                              <div className="absolute left-0 top-1.5 grid h-10 w-10 place-items-center rounded-full bg-white border-2 border-[var(--ocean-deep)] text-[var(--ocean-deep)] text-sm font-bold shadow-sm group-hover:bg-[var(--ocean-deep)] group-hover:text-white transition-all duration-300">
-                                {item.day}
+                      <div className="space-y-8 relative before:absolute before:inset-y-0 before:left-[19px] before:w-0.5 before:bg-[var(--ocean)]/20 pb-4">
+                        <div className="bg-gradient-to-r from-[var(--ocean)]/10 to-transparent border border-[var(--ocean)]/20 rounded-2xl p-5 mb-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+                          <div>
+                            <h4 className="text-lg font-semibold text-[var(--ocean-deep)]">
+                              {activeItinerary.title || "Signature Route"}
+                            </h4>
+                            <p className="text-xs text-[var(--ink)]/50 uppercase tracking-wider mt-0.5">
+                              {data.name} Islands Tour Itinerary
+                            </p>
+                          </div>
+                          <div className="bg-[var(--ocean-deep)] text-white px-4 py-2 rounded-xl text-xs md:text-sm font-semibold tracking-wide">
+                            {activeItinerary.duration}
+                          </div>
+                        </div>
+
+                        <RevealStagger key={activeItineraryIndex} className="space-y-6">
+                          {activeItinerary.days.map((item) => (
+                            <RevealItem key={item.day}>
+                              <div className="relative pl-12 group">
+                                <div className="absolute left-0 top-1.5 grid h-10 w-10 place-items-center rounded-full bg-white border-2 border-[var(--ocean-deep)] text-[var(--ocean-deep)] text-sm font-bold shadow-sm group-hover:bg-[var(--ocean-deep)] group-hover:text-white transition-all duration-300">
+                                  {item.day}
+                                </div>
+                                <div className="bg-white border border-[var(--ocean)]/15 rounded-2xl p-6 shadow-sm hover:border-[var(--ocean)]/40 hover:shadow-md transition-all duration-300">
+                                  <h3 className="text-lg md:text-xl font-semibold text-[var(--ocean-deep)] group-hover:text-[var(--gold)] transition-colors duration-300 leading-snug">
+                                    Day {item.day}: {item.title}
+                                  </h3>
+                                  <p className="text-sm md:text-base text-[var(--ink)]/75 leading-relaxed font-light mt-3">
+                                    {item.description}
+                                  </p>
+                                </div>
                               </div>
-                              <div className="bg-white border border-[var(--ocean)]/15 rounded-2xl p-6 shadow-sm hover:border-[var(--ocean)]/40 hover:shadow-md transition-all duration-300">
-                                <h3 className="text-lg md:text-xl font-semibold text-[var(--ocean-deep)] group-hover:text-[var(--gold)] transition-colors duration-300 leading-snug">
-                                  Day {item.day}: {item.title}
-                                </h3>
-                                <p className="text-sm md:text-base text-[var(--ink)]/75 leading-relaxed font-light mt-3">
-                                  {item.description}
-                                </p>
-                              </div>
-                            </div>
-                          </RevealItem>
-                        ))}
-                      </RevealStagger>
+                            </RevealItem>
+                          ))}
+                        </RevealStagger>
+                      </div>
                     </div>
                   )}
 
                   {/* Maldives Custom Bespoke Resort Booking Card */}
-                  {(!data.packages || data.packages.length === 0) && (!data.itinerary || data.itinerary.length === 0) && data.name === "Maldives" && (
+                  {(!data.packages || data.packages.length === 0) && availableItineraries.length === 0 && data.name === "Maldives" && (
                     <div className="relative overflow-hidden rounded-3xl border border-[var(--ocean)]/20 bg-white p-8 md:p-10 shadow-sm text-center space-y-6">
                       <div className="grid h-16 w-16 place-items-center rounded-full bg-[var(--ocean)]/10 text-[var(--ocean-deep)] mx-auto">
                         <Compass className="h-8 w-8 text-[var(--ocean-deep)]" />
@@ -476,7 +510,7 @@ export function DestinationPackagesPage({ data }: { data: DestinationPackages })
                   )}
 
                   {/* Fallback when no packages or itineraries present */}
-                  {(!data.packages || data.packages.length === 0) && (!data.itinerary || data.itinerary.length === 0) && data.name !== "Maldives" && (
+                  {(!data.packages || data.packages.length === 0) && availableItineraries.length === 0 && data.name !== "Maldives" && (
                     <div className="rounded-3xl border-2 border-dashed border-[var(--ocean)]/30 bg-white p-8 text-center space-y-4">
                       <div className="grid h-14 w-14 place-items-center rounded-full bg-[var(--ocean)]/10 text-[var(--ocean-deep)] mx-auto">
                         <Compass className="h-7 w-7 animate-pulse" />

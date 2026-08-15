@@ -23,6 +23,12 @@ export type ItineraryDay = {
   description: string;
 };
 
+export type FullItinerary = {
+  title: string;
+  duration: string;
+  days: ItineraryDay[];
+};
+
 export type DestinationDetails = {
   idealFor: string;
   mustSee: string[];
@@ -48,6 +54,7 @@ export type DestinationPackages = {
   details?: DestinationDetails;
   itinerary?: ItineraryDay[];
   itineraryDuration?: string;
+  itineraries?: FullItinerary[];
 };
 
 export const MAURITIUS_PACKAGES: DestinationPackages = {
@@ -292,6 +299,123 @@ export const ZANZIBAR_PACKAGES: DestinationPackages = {
     "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80",
   ],
   packages: [],
+  itineraryDuration: "05 Nights / 06 Days",
+  itinerary: [
+    {
+      day: 1,
+      title: "Arrival in Zanzibar & Transfer to Hotel",
+      description: "Arrival at Zanzibar Airport or Ferry Terminal. Meet and greet with our representative and transfer to your hotel. Check-in, relax and enjoy the rest of the day at leisure.",
+    },
+    {
+      day: 2,
+      title: "Stone Town & Spice Farm Tour",
+      description: "After breakfast, explore the historic Stone Town, including the Old Fort, House of Wonders, Darajani Market, Freddie Mercury House and the narrow streets of the old town. Continue to a traditional spice farm where you will learn about Zanzibar's famous spices and tropical fruits. Return to the hotel in the afternoon.",
+    },
+    {
+      day: 3,
+      title: "Safari Blue Full-Day Tour",
+      description: "Enjoy a full-day Safari Blue excursion. Explore the Menai Bay area, sandbanks, swimming and snorkeling, and enjoy a seafood lunch. Depending on the tides and weather, visit the famous blue lagoon and natural sandbanks before returning to the hotel.",
+    },
+    {
+      day: 4,
+      title: "Mnemba Island & Nungwi/Kendwa",
+      description: "Depart for the north coast for a marine experience around Mnemba Island. Enjoy snorkeling and, subject to conditions and responsible wildlife practices, the opportunity to see dolphins. Continue to Nungwi or Kendwa for beach relaxation and sunset views before returning to the hotel.",
+    },
+    {
+      day: 5,
+      title: "Jozani Forest & Beach Leisure",
+      description: "Visit Jozani Forest, home to Zanzibar's endemic red colobus monkeys. After the forest visit, return to the beach for a relaxing afternoon. Enjoy swimming, sunbathing or other activities at your hotel.",
+    },
+    {
+      day: 6,
+      title: "Departure",
+      description: "Breakfast at the hotel. Check-out and transfer to Zanzibar Airport or Ferry Terminal for your onward journey.",
+    },
+  ],
+  itineraries: [
+    {
+      title: "5 Nights / 6 Days Itinerary",
+      duration: "5 Nights / 6 Days",
+      days: [
+        {
+          day: 1,
+          title: "Arrival in Zanzibar & Transfer to Hotel",
+          description: "Arrival at Zanzibar Airport or Ferry Terminal. Meet and greet with our representative and transfer to your hotel. Check-in, relax and enjoy the rest of the day at leisure.",
+        },
+        {
+          day: 2,
+          title: "Stone Town & Spice Farm Tour",
+          description: "After breakfast, explore the historic Stone Town, including the Old Fort, House of Wonders, Darajani Market, Freddie Mercury House and the narrow streets of the old town. Continue to a traditional spice farm where you will learn about Zanzibar's famous spices and tropical fruits. Return to the hotel in the afternoon.",
+        },
+        {
+          day: 3,
+          title: "Safari Blue Full-Day Tour",
+          description: "Enjoy a full-day Safari Blue excursion. Explore the Menai Bay area, sandbanks, swimming and snorkeling, and enjoy a seafood lunch. Depending on the tides and weather, visit the famous blue lagoon and natural sandbanks before returning to the hotel.",
+        },
+        {
+          day: 4,
+          title: "Mnemba Island & Nungwi/Kendwa",
+          description: "Depart for the north coast for a marine experience around Mnemba Island. Enjoy snorkeling and, subject to conditions and responsible wildlife practices, the opportunity to see dolphins. Continue to Nungwi or Kendwa for beach relaxation and sunset views before returning to the hotel.",
+        },
+        {
+          day: 5,
+          title: "Jozani Forest & Beach Leisure",
+          description: "Visit Jozani Forest, home to Zanzibar's endemic red colobus monkeys. After the forest visit, return to the beach for a relaxing afternoon. Enjoy swimming, sunbathing or other activities at your hotel.",
+        },
+        {
+          day: 6,
+          title: "Departure",
+          description: "Breakfast at the hotel. Check-out and transfer to Zanzibar Airport or Ferry Terminal for your onward journey.",
+        },
+      ],
+    },
+    {
+      title: "7 Nights / 8 Days Itinerary",
+      duration: "7 Nights / 8 Days",
+      days: [
+        {
+          day: 1,
+          title: "Arrival in Zanzibar",
+          description: "Arrival at Zanzibar Airport or Ferry Terminal. Meet and greet followed by transfer to the hotel. Check-in and relaxation.",
+        },
+        {
+          day: 2,
+          title: "Stone Town & Spice Tour",
+          description: "Explore the historic streets of Stone Town and visit its main landmarks, including the Old Fort, Darajani Market and Freddie Mercury House. In the afternoon, visit a spice farm and discover Zanzibar's famous spices and tropical fruits.",
+        },
+        {
+          day: 3,
+          title: "Prison Island & Nakupenda Sandbank",
+          description: "Take a boat trip to Prison Island to see the giant Aldabra tortoises and learn about the island's history. Continue to Nakupenda Sandbank for swimming, snorkeling and a freshly prepared seafood lunch. Return to Stone Town or your hotel in the afternoon.",
+        },
+        {
+          day: 4,
+          title: "Safari Blue",
+          description: "Spend the day exploring the Menai Bay Conservation Area. Enjoy a boat trip, snorkeling, swimming, sandbank visits, a seafood lunch and relaxation in the beautiful tropical surroundings.",
+        },
+        {
+          day: 5,
+          title: "Jozani Forest & Kuza Cave",
+          description: "Visit Jozani Forest and discover the unique red colobus monkeys. Continue to Kuza Cave, a beautiful natural limestone cave where you can learn about its history and enjoy the surrounding environment. Return to the hotel for a relaxing evening.",
+        },
+        {
+          day: 6,
+          title: "Mnemba Island, Nungwi & Kendwa",
+          description: "Enjoy a full-day trip to the north coast. Experience snorkeling around Mnemba Island and explore the beaches of Nungwi and Kendwa. End the day with a beautiful Zanzibar sunset before returning to your hotel.",
+        },
+        {
+          day: 7,
+          title: "Beach Leisure Day",
+          description: "Enjoy a free day at the beach. Relax at the hotel, swim, enjoy water sports or simply explore the local surroundings at your own pace.",
+        },
+        {
+          day: 8,
+          title: "Departure",
+          description: "Breakfast and check-out. Transfer to Zanzibar Airport or Ferry Terminal for your departure.",
+        },
+      ],
+    },
+  ],
   details: {
     idealFor: "Zanzibar is ideal for cultural history buffs, spice lovers, couples, and travelers seeking pristine sandy beaches.",
     mustSee: [
