@@ -50,7 +50,7 @@ export const DESTINATIONS = [
     ],
     blurb:
       "Coral lagoons, lush interior peaks, and a melting pot of Creole, French and Indian culture.",
-    region: "Mascarene Islands",
+    region: "Indian Ocean",
   },
   {
     name: "Seychelles",
@@ -64,7 +64,7 @@ export const DESTINATIONS = [
     ],
     blurb:
       "Iconic granite boulders, pristine beaches, Coco de Mer palms, and serene turquoise waters.",
-    region: "Seychelles Archipelago",
+    region: "Indian Ocean",
   },
   {
     name: "Maldives",
@@ -78,7 +78,7 @@ export const DESTINATIONS = [
     ],
     blurb:
       "The ultimate overwater paradise. Unwind in crystal-clear lagoons and discover world-class coral reefs.",
-    region: "Maldivian Atolls",
+    region: "Indian Ocean",
   },
   {
     name: "Zanzibar",
@@ -92,7 +92,7 @@ export const DESTINATIONS = [
     ],
     blurb:
       "Spice-trade history, Stone Town lanes, and powdery white beaches lapped by turquoise tides.",
-    region: "Tanzania, East Africa",
+    region: "Indian Ocean",
   },
   {
     name: "Reunion Island",
@@ -106,7 +106,7 @@ export const DESTINATIONS = [
     ],
     blurb:
       "Hike a still-active volcano, circle the cirques of Mafate and Cilaos, and surf world-class breaks.",
-    region: "French Department",
+    region: "Indian Ocean",
   },
 ] as const;
 
