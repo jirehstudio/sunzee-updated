@@ -445,8 +445,8 @@ export function DestinationPackagesPage({ data }: { data: DestinationPackages })
                         </div>
                       )}
 
-                      <div className="space-y-8 relative before:absolute before:inset-y-0 before:left-[19px] before:w-0.5 before:bg-[var(--ocean)]/20 pb-4">
-                        <div className="bg-gradient-to-r from-[var(--ocean)]/10 to-transparent border border-[var(--ocean)]/20 rounded-2xl p-5 mb-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+                      <div className="space-y-8 pb-4">
+                        <div className="bg-gradient-to-r from-[var(--ocean)]/10 to-transparent border border-[var(--ocean)]/20 rounded-2xl p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
                           <div>
                             <h4 className="text-lg font-semibold text-[var(--ocean-deep)]">
                               {activeItinerary.title || "Signature Route"}
@@ -460,7 +460,7 @@ export function DestinationPackagesPage({ data }: { data: DestinationPackages })
                           </div>
                         </div>
 
-                        <RevealStagger key={activeItineraryIndex} className="space-y-6">
+                        <RevealStagger key={activeItineraryIndex} className="space-y-6 relative before:absolute before:inset-y-0 before:left-[19px] before:w-0.5 before:bg-[var(--ocean)]/20">
                           {activeItinerary.days.map((item) => (
                             <RevealItem key={item.day}>
                               <div className="relative pl-12 group">
