@@ -6,7 +6,7 @@ export const SITE = {
   name: "Sunzee Holidays",
   tagline: "Best Destination Management Company in East Africa",
   email: "product@sunzeeholidays.com",
-  bookingEmail: "info@sunzeeholidays.com",
+  bookingEmail: "product@sunzeeholidays.com",
   phone: "+23058374275",
   phoneRaw: "23058374275",
   copyright: "Copyright © 2026 Sunzee Holidays.",
