@@ -126,11 +126,6 @@ export function AboutPage() {
                   Sunzee Holidays opens its doors to travel agents and travellers, providing them with an authentic and tropical experience. Specializing in the B2B segment, Sunzee Holidays strives to be the ultimate travel superstore, offering the widest selection of hotels and the best online product ranges in the B2B space across the globe.
                 </p>
               </Reveal>
-              <Reveal delay={0.25}>
-                <p className="text-base md:text-lg text-[var(--ink)]/75 leading-relaxed font-light">
-                  The father-daughter duo takes their relationship to a new horizon by becoming partners and co-founders of Sunzee Holidays. Having been in the travel and tourism industry for decades, they firmly believe in the principle that &ldquo;servicing with a smile&rdquo; reflects the true spirit of an organization, as it is a validation of its brand promise.
-                </p>
-              </Reveal>
             </div>
           </div>
         </div>
@@ -222,7 +217,7 @@ export function AboutPage() {
                 </div>
 
                 <p className="text-sm md:text-base text-[var(--ink)]/75 leading-relaxed font-light">
-                  Qualified in Business and Tourism Management and specializing in Business-to-Business (B2B), MICE/events, and travel technology, Zaynah strongly believes that her passion for the industry was passed down by her father. Like him, she believes in listening to and understanding a client&apos;s needs, recognizing that a journey is a memory of a lifetime. In her previous roles, she has enhanced processes, driven innovation, and initiated changes that foster future business growth. Her belief in strong trade partnerships consistently leads to better outcomes, a value she brings to all her upcoming projects. Her mantra is: &ldquo;You will be judged by what you do, not what you say.&rdquo;
+                  Qualified in Business and Tourism Management and specializing in Business-to-Business (B2B), MICE/events, and travel technology, Zaynah believes in listening to and understanding a client&apos;s needs, recognizing that a journey is a memory of a lifetime. In her previous roles, she has enhanced processes, driven innovation, and initiated changes that foster future business growth. Her belief in strong trade partnerships consistently leads to better outcomes, a value she brings to all her upcoming projects. Her mantra is: &ldquo;You will be judged by what you do, not what you say.&rdquo;
                 </p>
 
                 <div className="mt-6 pt-5 border-t border-[var(--ocean)]/12 grid grid-cols-3 gap-3 text-center">

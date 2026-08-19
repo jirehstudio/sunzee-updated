@@ -128,14 +128,6 @@ export function DestinationPackagesPage({ data }: { data: DestinationPackages })
             <ChevronRight className="h-3 w-3 text-[var(--gold)]" />
             <span className="text-[var(--gold)] font-semibold">{data.name}</span>
           </nav>
-          <button
-            type="button"
-            onClick={() => setMobileFilterOpen(true)}
-            className="lg:hidden flex items-center gap-1.5 rounded-full border border-white/30 px-3 py-1.5 text-white hover:bg-white/10 transition-colors"
-          >
-            <Filter className="h-3.5 w-3.5" />
-            Filters
-          </button>
         </div>
       </div>
 
@@ -151,7 +143,7 @@ export function DestinationPackagesPage({ data }: { data: DestinationPackages })
               {details && (
                 <Reveal>
                   <div className="bg-white border border-[var(--ocean)]/15 rounded-3xl p-6 md:p-8 shadow-sm">
-                    <SectionLabel>Destination Overview</SectionLabel>
+                    <SectionLabel><span className="whitespace-nowrap">Destination Overview</span></SectionLabel>
                     <h2 className="text-3xl md:text-4xl font-medium text-[var(--ink)] mt-3 mb-5 leading-tight">
                       Experience {data.name}
                     </h2>
