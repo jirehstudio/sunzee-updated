@@ -52,8 +52,8 @@ export function Destinations() {
                   {/* Main image — natural aspect ratio (big landscape for featured, portrait for non-featured) */}
                   <div className={`relative w-full overflow-hidden bg-[var(--ocean-deep)] ${
                     featured
-                      ? "aspect-[4/3] sm:aspect-[16/10] lg:aspect-[16/9]"
-                      : "aspect-[4/3] sm:aspect-[4/3] lg:aspect-[4/5]"
+                      ? "aspect-[4/5] sm:aspect-[16/10] lg:aspect-[16/9]"
+                      : "aspect-[4/5] sm:aspect-square lg:aspect-[4/5]"
                   }`}>
                     <img
                       src={d.image}
