@@ -61,8 +61,9 @@ export function Destinations() {
                       loading="lazy"
                       className="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-110"
                     />
-                    {/* Gradient overlays — lighter for tourism vibe */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink)]/90 via-[var(--ink)]/20 to-transparent" />
+                    {/* Gradient overlays — ensure legibility on both top and bottom */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink)]/90 via-[var(--ink)]/40 to-transparent" />
+                    <div className="absolute inset-x-0 top-0 h-1/2 bg-gradient-to-b from-[var(--ink)]/70 to-transparent" />
                     <div className="absolute inset-0 bg-gradient-to-br from-[var(--ocean)]/30 via-transparent to-[var(--coral)]/15 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
 
                     {/* Coral frame on hover */}

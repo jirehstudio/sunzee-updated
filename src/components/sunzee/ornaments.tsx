@@ -131,12 +131,12 @@ export function WaveDivider({
   );
 }
 
-export function SectionLabel({ children }: { children: React.ReactNode }) {
+export function SectionLabel({ children, className = "" }: { children: React.ReactNode; className?: string }) {
   return (
-    <div className="inline-flex items-center gap-3 text-[10px] sm:text-xs font-semibold tracking-[0.32em] uppercase text-[var(--coral-deep)]">
-      <span className="h-px w-6 bg-[var(--coral)]" />
-      {children}
-      <span className="h-px w-6 bg-[var(--coral)]" />
+    <div className={`inline-flex items-center justify-center gap-3 text-[10px] sm:text-xs font-semibold tracking-[0.15em] sm:tracking-[0.32em] uppercase text-[var(--coral-deep)] ${className}`}>
+      <span className="h-px w-6 sm:w-8 bg-[var(--coral)] shrink-0" />
+      <span className="text-center">{children}</span>
+      <span className="h-px w-6 sm:w-8 bg-[var(--coral)] shrink-0" />
     </div>
   );
 }
